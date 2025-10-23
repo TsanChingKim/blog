@@ -3,7 +3,7 @@ title: Android开发方式
 date: 2025-10-22
 draft: "false"
 summary: 本文详细介绍了android的两种开发方式
-tags:["android","develop"]
+tags: ["android","develop"]
 ---
 
 # Android开发方式
