@@ -1,6 +1,6 @@
 {{ if .Site.Params.showComments }}
 <div class="comments">
-  <h3>评论</h3>
+  <h3>💬 评论</h3>
   
   <!-- Disqus 评论系统 -->
   {{ if .Site.Params.disqusShortname }}
@@ -9,6 +9,7 @@
     var disqus_config = function () {
       this.page.url = {{ .Permalink }};
       this.page.identifier = {{ .RelPermalink }};
+      this.page.title = {{ .Title }};
     };
     (function() {
       var d = document, s = d.createElement('script');
@@ -17,7 +18,7 @@
       (d.head || d.body).appendChild(s);
     })();
   </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <noscript>请启用JavaScript以查看<a href="https://disqus.com/?ref_noscript">由Disqus提供的评论</a>。</noscript>
   {{ end }}
   
   <!-- Giscus 评论系统 -->

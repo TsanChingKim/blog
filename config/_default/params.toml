@@ -18,18 +18,24 @@ replyByEmail = false
 # 评论系统配置
 showComments = true
 
-# Disqus 评论系统
-# disqusShortname = "your-disqus-shortname"
+# Disqus 评论系统 (推荐)
+# 请访问 https://disqus.com 注册并获取shortname
+disqusShortname = "tsanching-kims-blog"
 
-# Giscus 评论系统 (推荐)
-# 请访问 https://giscus.app/zh-CN 获取以下参数
-giscusRepo = "TsanChingKim/blog"
-# giscusRepoId = "请从giscus.app获取"
+# Giscus 评论系统
+# giscusRepo = "TsanChingKim/blog"
+# giscusRepoId = "R_kgDOKxxxxxxxxx"
 # giscusCategory = "General"
-# giscusCategoryId = "请从giscus.app获取"
+# giscusCategoryId = "DIC_kwDOKxxxxxxxxx"
 
-# Utterances 评论系统
-# utterancesRepo = "your-username/your-repo"
+# Utterances 评论系统 (基于GitHub Issues)
+# 无需额外配置，直接使用您的仓库
+utterancesRepo = "TsanChingKim/blog"
+
+# Fathom 网站分析
+[fathomAnalytics]
+  site = "your-fathom-site-code"
+  domain = "tsanchingkim.github.io"
 
 # mainSections = ["section1", "section2"]
 # robots = ""
