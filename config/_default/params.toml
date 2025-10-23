@@ -151,13 +151,14 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   cardViewScreenWidth = false
 
 [firebase]
-  # apiKey = "XXXXXX"
-  # authDomain = "XXXXXX"
-  # projectId = "XXXXXX"
-  # storageBucket = "XXXXXX"
-  # messagingSenderId = "XXXXXX"
-  # appId = "XXXXXX"
-  # measurementId = "XXXXXX"
+  # Firebase配置 - 从Firebase控制台获取的实际值
+  apiKey = "AIzaSyBvn4-7rAHHdeGoQCnSOFwwrqaNyLmfiZk"
+  authDomain = "bloglikes-75651.firebaseapp.com"
+  projectId = "bloglikes-75651"
+  storageBucket = "bloglikes-75651.firebasestorage.app"
+  messagingSenderId = "123079325024"
+  appId = "1:123079325024:web:bd780960210a7cff645a05"
+  measurementId = "G-VWR97NJYZP"
 
 # [fathomAnalytics]
   # site = "ABC12345"
