@@ -38,8 +38,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/master' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_GITHUB_TOKEN }}
         with:
+          github_token: ${{ secrets.GH_GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./public
