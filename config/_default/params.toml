@@ -15,6 +15,22 @@ enableCodeCopy = false
 
 replyByEmail = false
 
+# 评论系统配置
+showComments = true
+
+# Disqus 评论系统
+# disqusShortname = "your-disqus-shortname"
+
+# Giscus 评论系统 (推荐)
+# 请访问 https://giscus.app/zh-CN 获取以下参数
+giscusRepo = "TsanChingKim/blog"
+# giscusRepoId = "请从giscus.app获取"
+# giscusCategory = "General"
+# giscusCategoryId = "请从giscus.app获取"
+
+# Utterances 评论系统
+# utterancesRepo = "your-username/your-repo"
+
 # mainSections = ["section1", "section2"]
 # robots = ""
 

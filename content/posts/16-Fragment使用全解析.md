@@ -6,6 +6,7 @@ description: "详细介绍Android Fragment的概念、生命周期、加载方�
 featureimage: "/images/fragment-usage.jpg"
 featureimagecaption: "Fragment使用示意图"
 draft: false
+showComments: true
 ---
 
 # Fragment 概念

@@ -6,6 +6,7 @@ description: "详细介绍Android UI基础控件View的分类和使用，包括T
 featureimage: "/images/ui-controls.jpg"
 featureimagecaption: "Android UI控件示意图"
 draft: false
+showComments: true
 ---
 
 # UI 基础控件 View

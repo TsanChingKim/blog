@@ -6,6 +6,7 @@ description: "详细介绍Android ProgressBar进度条控件的使用方法和�
 featureimage: "/images/progressbar-control.jpg"
 featureimagecaption: "ProgressBar进度条控件示意图"
 draft: false
+showComments: true
 ---
 
 # ProgressBar 进度条控件

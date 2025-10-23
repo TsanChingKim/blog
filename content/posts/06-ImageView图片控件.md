@@ -6,6 +6,7 @@ description: "详细介绍Android ImageView图片控件的使用方法和属性�
 featureimage: "/images/imageview-control.jpg"
 featureimagecaption: "ImageView图片控件示意图"
 draft: false
+showComments: true
 ---
 
 # ImageView 图片控件

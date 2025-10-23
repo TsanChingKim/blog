@@ -7,6 +7,7 @@ description: "本文详细介绍了Android的两种开发方式：Java代码开�
 featureimage: "/images/android-development.jpg"
 featureimagecaption: "Android开发方式对比图"
 draft: false
+showComments: true
 ---
 
 # Android开发方式

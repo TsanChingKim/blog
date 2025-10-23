@@ -6,6 +6,7 @@ description: "详细介绍Android FrameLayout帧布局的使用方法和属性�
 featureimage: "/images/framelayout-control.jpg"
 featureimagecaption: "FrameLayout帧布局示意图"
 draft: false
+showComments: true
 ---
 
 # FrameLayout 帧布局

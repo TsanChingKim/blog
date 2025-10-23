@@ -6,6 +6,7 @@ description: "详细介绍Android BaseAdapter基础适配器的使用方法和�
 featureimage: "/images/base-adapter.jpg"
 featureimagecaption: "BaseAdapter基础适配器示意图"
 draft: false
+showComments: true
 ---
 
 和SimpleAdapter的区别是，可以调整某个想要调整的元素的内容

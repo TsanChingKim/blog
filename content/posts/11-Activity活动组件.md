@@ -6,6 +6,7 @@ description: "详细介绍Android Activity活动组件的概念、生命周期�
 featureimage: "/images/activity-component.jpg"
 featureimagecaption: "Activity活动组件示意图"
 draft: false
+showComments: true
 ---
 
 # Activity 活动组件

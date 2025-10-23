@@ -6,6 +6,7 @@ description: "详细介绍Android SimpleAdapter简单适配器的使用方法和
 featureimage: "/images/simple-adapter.jpg"
 featureimagecaption: "SimpleAdapter简单适配器示意图"
 draft: false
+showComments: true
 ---
 
 当创建了一个列表时，列表中的每个元素的布局都是一样的

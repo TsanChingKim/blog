@@ -6,6 +6,7 @@ description: "详细介绍Android ArrayAdapter数组适配器的使用方法和�
 featureimage: "/images/array-adapter.jpg"
 featureimagecaption: "ArrayAdapter数组适配器示意图"
 draft: false
+showComments: true
 ---
 
 # 定义

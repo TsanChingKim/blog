@@ -6,6 +6,7 @@ description: "详细介绍Android Button按钮控件的四种点击事件实现�
 featureimage: "/images/button-control.jpg"
 featureimagecaption: "Button按钮控件示意图"
 draft: false
+showComments: true
 ---
 
 # Button 按钮控件

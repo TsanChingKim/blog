@@ -1,0 +1,53 @@
+{{ if .Site.Params.showComments }}
+<div class="comments">
+  <h3>评论</h3>
+  
+  <!-- Disqus 评论系统 -->
+  {{ if .Site.Params.disqusShortname }}
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = {{ .Permalink }};
+      this.page.identifier = {{ .RelPermalink }};
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://{{ .Site.Params.disqusShortname }}.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  {{ end }}
+  
+  <!-- Giscus 评论系统 -->
+  {{ if .Site.Params.giscusRepo }}
+  <script src="https://giscus.app/client.js"
+          data-repo="{{ .Site.Params.giscusRepo }}"
+          data-repo-id="{{ .Site.Params.giscusRepoId }}"
+          data-category="{{ .Site.Params.giscusCategory }}"
+          data-category-id="{{ .Site.Params.giscusCategoryId }}"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="preferred_color_scheme"
+          data-lang="zh-CN"
+          crossorigin="anonymous"
+          async>
+  </script>
+  {{ end }}
+  
+  <!-- Utterances 评论系统 -->
+  {{ if .Site.Params.utterancesRepo }}
+  <script src="https://utteranc.es/client.js"
+          repo="{{ .Site.Params.utterancesRepo }}"
+          issue-term="pathname"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+  </script>
+  {{ end }}
+</div>
+{{ end }}

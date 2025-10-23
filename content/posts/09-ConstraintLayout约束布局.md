@@ -6,6 +6,7 @@ description: "详细介绍Android ConstraintLayout约束布局的使用方法和
 featureimage: "/images/constraint-layout.jpg"
 featureimagecaption: "ConstraintLayout约束布局示意图"
 draft: false
+showComments: true
 ---
 
 # ConstraintLayout 约束布局

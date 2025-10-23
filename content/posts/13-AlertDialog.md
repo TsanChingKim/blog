@@ -6,6 +6,7 @@ description: "详细介绍Android AlertDialog对话框的使用方法和自定�
 featureimage: "/images/alert-dialog.jpg"
 featureimagecaption: "AlertDialog对话框示意图"
 draft: false
+showComments: true
 ---
 
 # 定义

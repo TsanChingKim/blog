@@ -6,6 +6,7 @@ description: "详细介绍Android PopupWindow弹出窗口的使用方法和动�
 featureimage: "/images/popup-window.jpg"
 featureimagecaption: "PopupWindow弹出窗口示意图"
 draft: false
+showComments: true
 ---
 
 # 定义
