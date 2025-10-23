@@ -19,12 +19,12 @@ draft: false
 
 ## 📚TextView
 
-```mermaid
+{{< mermaid >}}
 flowchart TB
 	A("View") --> B("TextView")
 	B --> C("Button")
 	B --> D("EditText")
-```
+{{< /mermaid >}}
 
 TextView 类似于Swing中的JLable，对长文本进行显示处理。支持Html，内容有样式链接效果
 

@@ -58,7 +58,7 @@ Activity之间的跳转是一种栈的数据结构
 
 ### 单个Activity的生命周期
 
-```mermaid
+{{< mermaid >}}
 ---
 title: 基础操作会引发的生命周期变化
 ---
@@ -75,11 +75,11 @@ graph TD
 		 A(onCreate) --> B(onStart)
 		 B --> C(onResume)
 	end
-```
+{{< /mermaid >}}
 
 ### 已经处于前台的 Activity，点击主页按钮离开当前 Activity
 
-```mermaid
+{{< mermaid >}}
 graph TD
 	subgraph 回到 Activity
 		C(onRestart) --> D(onStart)
@@ -88,11 +88,11 @@ graph TD
 	subgraph 单击主页按钮离开页面
 		A(onPause) --> B(onStop)
 	end
-```
+{{< /mermaid >}}
 
 ### Activity不可操作（如息屏、打开了其他Activity）而应用被强行杀死了
 
-```mermaid
+{{< mermaid >}}
 graph TD
 	subgraph 重新回到Activity
 		C(onCreate) --> D(onStart)
@@ -101,7 +101,7 @@ graph TD
 	subgraph 不可操作并被kill
 		A(onPause) --> B(onStop)
 	end
-```
+{{< /mermaid >}}
 
 >[!error] 注意
 >普通对话框对生命周期没有任何影响，如果有个Activity伪装成对话框模式，那么当他启动时，之前的Activity:onPause，"对话框"消失后，回调onResume
