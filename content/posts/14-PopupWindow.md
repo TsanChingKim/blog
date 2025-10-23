@@ -1,7 +1,7 @@
 ---
 title: "PopupWindow弹出窗口"
 date: 2025-10-22
-tags: ["Android", "PopupWindow", "弹出窗口", "UI"]
+categories: ["Android对话框"]
 description: "详细介绍Android PopupWindow弹出窗口的使用方法和动画效果设置"
 featureimage: "/images/popup-window.jpg"
 featureimagecaption: "PopupWindow弹出窗口示意图"

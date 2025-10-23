@@ -1,7 +1,7 @@
 ---
 title: "ConstraintLayout约束布局"
 date: 2025-10-22
-tags: ["Android", "ConstraintLayout", "约束布局", "UI"]
+categories: ["Android布局"]
 description: "详细介绍Android ConstraintLayout约束布局的使用方法和属性配置，包括约束关系和偏移量设置"
 featureimage: "/images/constraint-layout.jpg"
 featureimagecaption: "ConstraintLayout约束布局示意图"

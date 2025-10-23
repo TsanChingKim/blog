@@ -1,7 +1,7 @@
 ---
 title: "SimpleAdapter简单适配器"
 date: 2025-10-22
-tags: ["Android", "SimpleAdapter", "适配器", "ListView"]
+categories: ["Android适配器"]
 description: "详细介绍Android SimpleAdapter简单适配器的使用方法和参数配置，用于显示复杂布局的列表"
 featureimage: "/images/simple-adapter.jpg"
 featureimagecaption: "SimpleAdapter简单适配器示意图"

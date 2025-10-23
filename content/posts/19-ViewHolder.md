@@ -1,7 +1,7 @@
 ---
 title: "ViewHolder模式优化"
 date: 2025-10-22
-tags: ["Android", "ViewHolder", "性能优化", "ListView"]
+categories: ["Android适配器"]
 description: "详细介绍Android ViewHolder模式的使用方法和性能优化原理，通过复用视图提升列表性能"
 featureimage: "/images/viewholder-pattern.jpg"
 featureimagecaption: "ViewHolder模式示意图"

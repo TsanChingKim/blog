@@ -2,6 +2,7 @@
 title: "Android开发方式"
 date: 2025-10-22
 tags: ["Android", "开发方式", "Java", "XML"]
+categories: ["Android基础"]
 description: "本文详细介绍了Android的两种开发方式：Java代码开发和XML文件开发，并推荐使用XML方式进行开发"
 featureimage: "/images/android-development.jpg"
 featureimagecaption: "Android开发方式对比图"

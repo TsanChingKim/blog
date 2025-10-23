@@ -1,7 +1,7 @@
 ---
 title: "Fragment使用全解析"
 date: 2025-10-22
-tags: ["Android", "Fragment", "生命周期", "动态加载", "传值"]
+categories: ["Android组件"]
 description: "详细介绍Android Fragment的概念、生命周期、加载方式和Activity与Fragment之间的传值方法"
 featureimage: "/images/fragment-usage.jpg"
 featureimagecaption: "Fragment使用示意图"
