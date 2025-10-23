@@ -78,8 +78,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [article]
   showDate = true
-  showViews = false
-  showLikes = false
+  showViews = true
+  showLikes = true
   showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = true
@@ -108,8 +108,6 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram", "line"]
   showZenMode = false
   showComments = true
-  showViews = true
-  showLikes = true
 
 [list]
   showHero = false
