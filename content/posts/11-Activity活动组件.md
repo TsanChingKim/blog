@@ -26,20 +26,17 @@ Activity之间的跳转是一种栈的数据结构
 ### Standard
 这也是系统标准的运行模式
 
-![[ea4d203a90a53056afd2d9704d45e2b3_MD5.png]]
-
+![ea4d203a90a53056afd2d9704d45e2b3_MD5](https://raw.githubusercontent.com/TsanChingKim/picGo/main/pic/ea4d203a90a53056afd2d9704d45e2b3_MD5.png)
 ### SingleTop
 顶部复用模式
 如果顶部还有用户打开的 Activity 就不会创建新的 Activity
-![[4efc467113246a3a5c6406ee3ff0ec71_MD5.png]]
-
+![4efc467113246a3a5c6406ee3ff0ec71_MD5](https://raw.githubusercontent.com/TsanChingKim/picGo/main/pic/4efc467113246a3a5c6406ee3ff0ec71_MD5.png)
 ### SingleTask
 如果顶部没有当前用户打开的Activity则会先清除顶部的 Activity 直到找到该Activity
-![[7a9c1d7341c3db700ae5d829baa499b9_MD5.png]]
-
+![7a9c1d7341c3db700ae5d829baa499b9_MD5](https://raw.githubusercontent.com/TsanChingKim/picGo/main/pic/7a9c1d7341c3db700ae5d829baa499b9_MD5.png)
 ### SingleInstance
 将某个操作模式单独放入到一个栈中
-![[c66414ac7266fe9523803f4572e68202_MD5.png]]
+![c66414ac7266fe9523803f4572e68202_MD5](https://raw.githubusercontent.com/TsanChingKim/picGo/main/pic/c66414ac7266fe9523803f4572e68202_MD5.png)
 
 ## Activity 启动方式
 
@@ -54,7 +51,7 @@ Activity之间的跳转是一种栈的数据结构
 
 ## Activity 生命周期
 
-![[3ef71fe678c5084426406babcc0c36c7_MD5.png]]
+![3ef71fe678c5084426406babcc0c36c7_MD5](https://raw.githubusercontent.com/TsanChingKim/picGo/main/pic/3ef71fe678c5084426406babcc0c36c7_MD5.png)
 
 ### 单个Activity的生命周期
 
