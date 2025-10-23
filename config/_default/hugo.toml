@@ -9,6 +9,10 @@ theme = "blowfish" # UNCOMMENT THIS LINE
 # baseURL = "https://your_domain.com/"
 defaultContentLanguage = "en"
 
+# 添加这些配置来确保资源路径正确
+canonifyURLs = true
+relativeURLs = false
+
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
