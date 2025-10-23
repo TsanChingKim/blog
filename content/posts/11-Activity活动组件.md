@@ -62,14 +62,14 @@ Activity之间的跳转是一种栈的数据结构
 ---
 title: 基础操作会引发的生命周期变化
 ---
- graph TD
+graph TD
 	subgraph 再次启动
 		G(onCreate) --> H(onStart)
 		H --> I(onResume)
 	end
 	subgraph 正常退出
 		D(onPause) --> E(onStop)
-		E --> F(onDestory)
+		E --> F(onDestroy)
 	end
 	subgraph 正常进入
 		 A(onCreate) --> B(onStart)
@@ -88,7 +88,6 @@ graph TD
 	subgraph 单击主页按钮离开页面
 		A(onPause) --> B(onStop)
 	end
-	
 ```
 
 ### Activity不可操作（如息屏、打开了其他Activity）而应用被强行杀死了
@@ -100,7 +99,7 @@ graph TD
 		D --> E(onResume)
 	end
 	subgraph 不可操作并被kill
-		A(onPause) --> B(onStart)
+		A(onPause) --> B(onStop)
 	end
 ```
 
