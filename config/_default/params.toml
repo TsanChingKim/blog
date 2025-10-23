@@ -22,12 +22,6 @@ showComments = true
 # 请访问 https://disqus.com 注册并获取shortname
 disqusShortname = "tsanching-kims-blog"
 
-# Giscus 评论系统
-# giscusRepo = "TsanChingKim/blog"
-# giscusRepoId = "R_kgDOKxxxxxxxxx"
-# giscusCategory = "General"
-# giscusCategoryId = "DIC_kwDOKxxxxxxxxx"
-
 # Utterances 评论系统 (基于GitHub Issues)
 # 无需额外配置，直接使用您的仓库
 utterancesRepo = "TsanChingKim/blog"
