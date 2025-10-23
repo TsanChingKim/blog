@@ -1,3 +1,13 @@
+---
+title: "ViewHolder模式优化"
+date: 2025-10-22
+tags: ["Android", "ViewHolder", "性能优化", "ListView"]
+description: "详细介绍Android ViewHolder模式的使用方法和性能优化原理，通过复用视图提升列表性能"
+featureimage: "/images/viewholder-pattern.jpg"
+featureimagecaption: "ViewHolder模式示意图"
+draft: false
+---
+
 当滑动到list中的某个元素时，会将其加载出来，而滑到别的元素后重新滑动到已经加载过得的元素时，会进行重新加载，
 # 利用进入RecycleBin获取已经加载过的控件
 # 使用ViewHolder进行列表优化

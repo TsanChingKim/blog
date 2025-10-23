@@ -1,3 +1,13 @@
+---
+title: "ProgressBar进度条控件"
+date: 2025-10-22
+tags: ["Android", "ProgressBar", "进度条", "UI"]
+description: "详细介绍Android ProgressBar进度条控件的使用方法和属性配置，包括水平和圆形进度条"
+featureimage: "/images/progressbar-control.jpg"
+featureimagecaption: "ProgressBar进度条控件示意图"
+draft: false
+---
+
 # ProgressBar 进度条控件
 
 ```xml

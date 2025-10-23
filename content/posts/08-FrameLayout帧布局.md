@@ -1,3 +1,13 @@
+---
+title: "FrameLayout帧布局"
+date: 2025-10-22
+tags: ["Android", "FrameLayout", "帧布局", "UI"]
+description: "详细介绍Android FrameLayout帧布局的使用方法和属性配置，包括层叠排列和layout_gravity属性"
+featureimage: "/images/framelayout-control.jpg"
+featureimagecaption: "FrameLayout帧布局示意图"
+draft: false
+---
+
 # FrameLayout 帧布局
 
 在该容器下，所有的控件都是从最底部开始层叠排列的

@@ -1,3 +1,13 @@
+---
+title: "Activity活动组件"
+date: 2025-10-22
+tags: ["Android", "Activity", "生命周期", "启动模式", "Intent"]
+description: "详细介绍Android Activity活动组件的概念、生命周期、启动模式、跳转方式和信息传递方法"
+featureimage: "/images/activity-component.jpg"
+featureimagecaption: "Activity活动组件示意图"
+draft: false
+---
+
 # Activity 活动组件
 
 ## 什么是Activity

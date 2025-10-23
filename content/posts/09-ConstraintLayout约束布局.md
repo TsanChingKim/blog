@@ -1,3 +1,13 @@
+---
+title: "ConstraintLayout约束布局"
+date: 2025-10-22
+tags: ["Android", "ConstraintLayout", "约束布局", "UI"]
+description: "详细介绍Android ConstraintLayout约束布局的使用方法和属性配置，包括约束关系和偏移量设置"
+featureimage: "/images/constraint-layout.jpg"
+featureimagecaption: "ConstraintLayout约束布局示意图"
+draft: false
+---
+
 # ConstraintLayout 约束布局
 
 当前控件的某个方位和另一个参照物的某个方位对齐

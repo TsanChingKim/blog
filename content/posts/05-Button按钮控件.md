@@ -1,3 +1,13 @@
+---
+title: "Button按钮控件"
+date: 2025-10-22
+tags: ["Android", "Button", "事件处理", "Kotlin", "XML"]
+description: "详细介绍Android Button按钮控件的四种点击事件实现方式：自定义内部类、匿名内部类、本类实现和XML绑定"
+featureimage: "/images/button-control.jpg"
+featureimagecaption: "Button按钮控件示意图"
+draft: false
+---
+
 # Button 按钮控件
 
 button注册点击时间的方法：

@@ -1,3 +1,13 @@
+---
+title: "ImageView图片控件"
+date: 2025-10-22
+tags: ["Android", "ImageView", "图片控件", "UI"]
+description: "详细介绍Android ImageView图片控件的使用方法和属性配置，包括src和background的区别"
+featureimage: "/images/imageview-control.jpg"
+featureimagecaption: "ImageView图片控件示意图"
+draft: false
+---
+
 # ImageView 图片控件
 
 用来显示和控制图像的空间，可以对它进行放大、缩小、旋转等操作。
