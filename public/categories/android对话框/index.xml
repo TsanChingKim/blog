@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android对话框 on TsanChing Kim&#39;s Blog</title>
+    <link>http://localhost:1313/blog/categories/android%E5%AF%B9%E8%AF%9D%E6%A1%86/</link>
+    <description>Recent content in Android对话框 on TsanChing Kim&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>jin1357908642@163.com (TsanChing Kim)</managingEditor>
+    <webMaster>jin1357908642@163.com (TsanChing Kim)</webMaster>
+    <copyright>© 2025 TsanChing Kim</copyright>
+    <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/android%E5%AF%B9%E8%AF%9D%E6%A1%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AlertDialog对话框</title>
+      <link>http://localhost:1313/blog/posts/13-alertdialog/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <author>jin1357908642@163.com (TsanChing Kim)</author>
+      <guid>http://localhost:1313/blog/posts/13-alertdialog/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PopupWindow弹出窗口</title>
+      <link>http://localhost:1313/blog/posts/14-popupwindow/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <author>jin1357908642@163.com (TsanChing Kim)</author>
+      <guid>http://localhost:1313/blog/posts/14-popupwindow/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

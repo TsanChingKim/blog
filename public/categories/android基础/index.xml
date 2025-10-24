@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android基础 on TsanChing Kim&#39;s Blog</title>
+    <link>http://localhost:1313/blog/categories/android%E5%9F%BA%E7%A1%80/</link>
+    <description>Recent content in Android基础 on TsanChing Kim&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>jin1357908642@163.com (TsanChing Kim)</managingEditor>
+    <webMaster>jin1357908642@163.com (TsanChing Kim)</webMaster>
+    <copyright>© 2025 TsanChing Kim</copyright>
+    <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/android%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Android开发方式</title>
+      <link>http://localhost:1313/blog/posts/01-android%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <author>jin1357908642@163.com (TsanChing Kim)</author>
+      <guid>http://localhost:1313/blog/posts/01-android%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

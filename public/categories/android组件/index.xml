@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android组件 on TsanChing Kim&#39;s Blog</title>
+    <link>http://localhost:1313/blog/categories/android%E7%BB%84%E4%BB%B6/</link>
+    <description>Recent content in Android组件 on TsanChing Kim&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>jin1357908642@163.com (TsanChing Kim)</managingEditor>
+    <webMaster>jin1357908642@163.com (TsanChing Kim)</webMaster>
+    <copyright>© 2025 TsanChing Kim</copyright>
+    <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/android%E7%BB%84%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Activity活动组件</title>
+      <link>http://localhost:1313/blog/posts/11-activity%E6%B4%BB%E5%8A%A8%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <author>jin1357908642@163.com (TsanChing Kim)</author>
+      <guid>http://localhost:1313/blog/posts/11-activity%E6%B4%BB%E5%8A%A8%E7%BB%84%E4%BB%B6/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Fragment使用全解析</title>
+      <link>http://localhost:1313/blog/posts/16-fragment%E4%BD%BF%E7%94%A8%E5%85%A8%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <author>jin1357908642@163.com (TsanChing Kim)</author>
+      <guid>http://localhost:1313/blog/posts/16-fragment%E4%BD%BF%E7%94%A8%E5%85%A8%E8%A7%A3%E6%9E%90/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>菜单组件</title>
+      <link>http://localhost:1313/blog/posts/12-%E8%8F%9C%E5%8D%95%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <author>jin1357908642@163.com (TsanChing Kim)</author>
+      <guid>http://localhost:1313/blog/posts/12-%E8%8F%9C%E5%8D%95%E7%BB%84%E4%BB%B6/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
