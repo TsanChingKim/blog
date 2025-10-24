@@ -11,6 +11,25 @@ import sys
 import glob
 from pathlib import Path
 
+def convert_mermaid_syntax(content):
+    """
+    将Obsidian的Mermaid语法转换为Blowfish的Mermaid简码语法
+    Obsidian: ```mermaid ... ```
+    Blowfish: {{< mermaid >}} ... {{< /mermaid >}}
+    """
+    # 匹配Obsidian的mermaid代码块
+    mermaid_pattern = r'```mermaid\s*\n(.*?)\n```'
+    
+    def replace_mermaid(match):
+        mermaid_content = match.group(1)
+        # 转换为Blowfish的mermaid简码
+        return f'{{{{< mermaid >}}}}\n{mermaid_content}\n{{{{< /mermaid >}}}}'
+    
+    # 执行替换
+    new_content = re.sub(mermaid_pattern, replace_mermaid, content, flags=re.DOTALL)
+    
+    return new_content
+
 def convert_yaml_lists_to_json(content):
     """
     将YAML列表格式转换为JSON数组格式
@@ -54,6 +73,10 @@ def process_file(file_path):
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
         
+        # 先转换Mermaid语法
+        content = convert_mermaid_syntax(content)
+        
+        # 再转换YAML列表格式
         converted_content = convert_yaml_lists_to_json(content)
         
         if converted_content != content:
@@ -108,22 +131,39 @@ def preview_changes(file_path):
         with open(file_path, 'r', encoding='utf-8') as f:
             original_content = f.read()
         
-        converted_content = convert_yaml_lists_to_json(original_content)
+        # 先转换Mermaid语法
+        mermaid_converted = convert_mermaid_syntax(original_content)
+        
+        # 再转换YAML列表格式
+        converted_content = convert_yaml_lists_to_json(mermaid_converted)
         
         if converted_content != original_content:
             print(f"\n文件: {file_path}")
             print("变化预览:")
             print("-" * 40)
             
-            # 显示变化的部分
-            original_lines = original_content.split('\n')
-            converted_lines = converted_content.split('\n')
+            # 检查Mermaid转换
+            if mermaid_converted != original_content:
+                print("Mermaid语法转换:")
+                mermaid_matches = re.findall(r'```mermaid\s*\n(.*?)\n```', original_content, re.DOTALL)
+                for i, match in enumerate(mermaid_matches):
+                    print(f"  发现Mermaid代码块 {i+1}:")
+                    print(f"    原: ```mermaid\n{match[:100]}...```")
+                    print(f"    新: {{< mermaid >}}\n{match[:100]}...{{< /mermaid >}}")
+                print()
             
-            for i, (orig, conv) in enumerate(zip(original_lines, converted_lines)):
-                if orig != conv:
-                    print(f"第{i+1}行:")
-                    print(f"  原: {orig}")
-                    print(f"  新: {conv}")
+            # 检查YAML转换
+            if converted_content != mermaid_converted:
+                print("YAML列表转换:")
+                # 显示变化的部分
+                original_lines = mermaid_converted.split('\n')
+                converted_lines = converted_content.split('\n')
+                
+                for i, (orig, conv) in enumerate(zip(original_lines, converted_lines)):
+                    if orig != conv:
+                        print(f"  第{i+1}行:")
+                        print(f"    原: {orig}")
+                        print(f"    新: {conv}")
             print("-" * 40)
             return True
         else:
@@ -151,6 +191,7 @@ def main():
         print("  python obsidian-to-blowfish.py . --preview")
         print("")
         print("转换内容:")
+        print("  Mermaid语法: ```mermaid ... ``` -> {{< mermaid >}} ... {{< /mermaid >}}")
         print("  Categories: -> categories: [JSON数组]")
         print("  tags: -> tags: [JSON数组]")
         return
