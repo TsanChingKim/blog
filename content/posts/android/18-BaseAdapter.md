@@ -1,7 +1,7 @@
 ---
 title: "BaseAdapter基础适配器"
 date: 2025-10-22
-categories: ["Android适配器"]
+categories: ["Android development"]
 description: "详细介绍Android BaseAdapter基础适配器的使用方法和与SimpleAdapter的区别，可以自定义调整元素内容"
 featureimage: "/images/base-adapter.jpg"
 featureimagecaption: "BaseAdapter基础适配器示意图"

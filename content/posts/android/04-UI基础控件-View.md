@@ -1,7 +1,7 @@
 ---
 title: "UI基础控件 View"
 date: 2025-10-22
-categories: ["Android控件"]
+categories: ["Android development"]
 description: "详细介绍Android UI基础控件View的分类和使用，包括TextView、EditText等控件的属性和配置"
 featureimage: "/images/ui-controls.jpg"
 featureimagecaption: "Android UI控件示意图"

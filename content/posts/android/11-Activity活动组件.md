@@ -1,7 +1,7 @@
 ---
 title: "Activity活动组件"
 date: 2025-10-22
-categories: ["Android组件"]
+categories: ["Android development"]
 description: "详细介绍Android Activity活动组件的概念、生命周期、启动模式、跳转方式和信息传递方法"
 featureimage: "/images/activity-component.jpg"
 featureimagecaption: "Activity活动组件示意图"

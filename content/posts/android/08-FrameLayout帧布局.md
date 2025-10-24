@@ -1,7 +1,7 @@
 ---
 title: "FrameLayout帧布局"
 date: 2025-10-22
-categories: ["Android布局"]
+categories: ["Android development"]
 description: "详细介绍Android FrameLayout帧布局的使用方法和属性配置，包括层叠排列和layout_gravity属性"
 featureimage: "/images/framelayout-control.jpg"
 featureimagecaption: "FrameLayout帧布局示意图"

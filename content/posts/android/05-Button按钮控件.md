@@ -1,7 +1,7 @@
 ---
 title: "Button按钮控件"
 date: 2025-10-22
-categories: ["Android控件"]
+categories: ["Android development"]
 description: "详细介绍Android Button按钮控件的四种点击事件实现方式：自定义内部类、匿名内部类、本类实现和XML绑定"
 featureimage: "/images/button-control.jpg"
 featureimagecaption: "Button按钮控件示意图"

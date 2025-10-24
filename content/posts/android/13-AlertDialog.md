@@ -1,7 +1,7 @@
 ---
 title: "AlertDialog对话框"
 date: 2025-10-22
-categories: ["Android对话框"]
+categories: ["Android development"]
 description: "详细介绍Android AlertDialog对话框的使用方法和自定义对话框的实现步骤"
 featureimage: "/images/alert-dialog.jpg"
 featureimagecaption: "AlertDialog对话框示意图"

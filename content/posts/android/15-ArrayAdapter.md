@@ -1,7 +1,7 @@
 ---
 title: "ArrayAdapter数组适配器"
 date: 2025-10-22
-categories: ["Android适配器"]
+categories: ["Android development"]
 description: "详细介绍Android ArrayAdapter数组适配器的使用方法和构造参数，用于显示单一文本的列表"
 featureimage: "/images/array-adapter.jpg"
 featureimagecaption: "ArrayAdapter数组适配器示意图"

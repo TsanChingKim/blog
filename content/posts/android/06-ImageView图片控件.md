@@ -1,7 +1,7 @@
 ---
 title: "ImageView图片控件"
 date: 2025-10-22
-categories: ["Android控件"]
+categories: ["Android development"]
 description: "详细介绍Android ImageView图片控件的使用方法和属性配置，包括src和background的区别"
 featureimage: "/images/imageview-control.jpg"
 featureimagecaption: "ImageView图片控件示意图"
