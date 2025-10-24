@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>文档 on TsanChing Kim's Blog</title><link>https://tsanchingkim.github.io/blog/tags/%E6%96%87%E6%A1%A3/</link><description>Recent content in 文档 on TsanChing Kim's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>jin1357908642@163.com (TsanChing Kim)</managingEditor><webMaster>jin1357908642@163.com (TsanChing Kim)</webMaster><copyright>© 2025 TsanChing Kim</copyright><lastBuildDate>Thu, 23 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://tsanchingkim.github.io/blog/tags/%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml"/><item><title>整个文档密码保护示例</title><link>https://tsanchingkim.github.io/blog/posts/document-password-example/</link><pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate><author>jin1357908642@163.com (TsanChing Kim)</author><guid>https://tsanchingkim.github.io/blog/posts/document-password-example/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>文档 on TsanChing Kim&#39;s Blog</title>
+    <link>http://localhost:1313/blog/tags/%E6%96%87%E6%A1%A3/</link>
+    <description>Recent content in 文档 on TsanChing Kim&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>jin1357908642@163.com (TsanChing Kim)</managingEditor>
+    <webMaster>jin1357908642@163.com (TsanChing Kim)</webMaster>
+    <copyright>© 2025 TsanChing Kim</copyright>
+    <lastBuildDate>Thu, 23 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>整个文档密码保护示例</title>
+      <link>http://localhost:1313/blog/posts/document-password-example/</link>
+      <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
+      <author>jin1357908642@163.com (TsanChing Kim)</author>
+      <guid>http://localhost:1313/blog/posts/document-password-example/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

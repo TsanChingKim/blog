@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>保护 on TsanChing Kim&#39;s Blog</title>
-    <link>http://localhost:1313/blog/tags/%E4%BF%9D%E6%8A%A4/</link>
-    <description>Recent content in 保护 on TsanChing Kim&#39;s Blog</description>
+    <title>安全 on TsanChing Kim&#39;s Blog</title>
+    <link>http://localhost:1313/blog/tags/%E5%AE%89%E5%85%A8/</link>
+    <description>Recent content in 安全 on TsanChing Kim&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>jin1357908642@163.com (TsanChing Kim)</managingEditor>
     <webMaster>jin1357908642@163.com (TsanChing Kim)</webMaster>
     <copyright>© 2025 TsanChing Kim</copyright>
-    <lastBuildDate>Thu, 23 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/%E4%BF%9D%E6%8A%A4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>整个文档密码保护示例</title>
-      <link>http://localhost:1313/blog/posts/document-password-example/</link>
+      <title>安全密码保护文章示例</title>
+      <link>http://localhost:1313/blog/posts/secure-password-example/</link>
       <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/document-password-example/</guid>
+      <guid>http://localhost:1313/blog/posts/secure-password-example/</guid>
       <description></description>
       
     </item>
