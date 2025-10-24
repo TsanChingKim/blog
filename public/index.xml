@@ -13,200 +13,200 @@
     
     <item>
       <title>Activity活动组件</title>
-      <link>http://localhost:1313/blog/posts/11-activity%E6%B4%BB%E5%8A%A8%E7%BB%84%E4%BB%B6/</link>
+      <link>http://localhost:1313/blog/posts/android/11-activity%E6%B4%BB%E5%8A%A8%E7%BB%84%E4%BB%B6/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/11-activity%E6%B4%BB%E5%8A%A8%E7%BB%84%E4%BB%B6/</guid>
+      <guid>http://localhost:1313/blog/posts/android/11-activity%E6%B4%BB%E5%8A%A8%E7%BB%84%E4%BB%B6/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>AlertDialog对话框</title>
-      <link>http://localhost:1313/blog/posts/13-alertdialog/</link>
+      <link>http://localhost:1313/blog/posts/android/13-alertdialog/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/13-alertdialog/</guid>
+      <guid>http://localhost:1313/blog/posts/android/13-alertdialog/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Android开发方式</title>
-      <link>http://localhost:1313/blog/posts/01-android%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F/</link>
+      <link>http://localhost:1313/blog/posts/android/01-android%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/01-android%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F/</guid>
+      <guid>http://localhost:1313/blog/posts/android/01-android%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ArrayAdapter数组适配器</title>
-      <link>http://localhost:1313/blog/posts/15-arrayadapter/</link>
+      <link>http://localhost:1313/blog/posts/android/15-arrayadapter/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/15-arrayadapter/</guid>
+      <guid>http://localhost:1313/blog/posts/android/15-arrayadapter/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>BaseAdapter基础适配器</title>
-      <link>http://localhost:1313/blog/posts/18-baseadapter/</link>
+      <link>http://localhost:1313/blog/posts/android/18-baseadapter/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/18-baseadapter/</guid>
+      <guid>http://localhost:1313/blog/posts/android/18-baseadapter/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Button按钮控件</title>
-      <link>http://localhost:1313/blog/posts/05-button%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6/</link>
+      <link>http://localhost:1313/blog/posts/android/05-button%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/05-button%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6/</guid>
+      <guid>http://localhost:1313/blog/posts/android/05-button%E6%8C%89%E9%92%AE%E6%8E%A7%E4%BB%B6/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ConstraintLayout约束布局</title>
-      <link>http://localhost:1313/blog/posts/09-constraintlayout%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80/</link>
+      <link>http://localhost:1313/blog/posts/android/09-constraintlayout%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/09-constraintlayout%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80/</guid>
+      <guid>http://localhost:1313/blog/posts/android/09-constraintlayout%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Fragment使用全解析</title>
-      <link>http://localhost:1313/blog/posts/16-fragment%E4%BD%BF%E7%94%A8%E5%85%A8%E8%A7%A3%E6%9E%90/</link>
+      <link>http://localhost:1313/blog/posts/android/16-fragment%E4%BD%BF%E7%94%A8%E5%85%A8%E8%A7%A3%E6%9E%90/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/16-fragment%E4%BD%BF%E7%94%A8%E5%85%A8%E8%A7%A3%E6%9E%90/</guid>
+      <guid>http://localhost:1313/blog/posts/android/16-fragment%E4%BD%BF%E7%94%A8%E5%85%A8%E8%A7%A3%E6%9E%90/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>FrameLayout帧布局</title>
-      <link>http://localhost:1313/blog/posts/08-framelayout%E5%B8%A7%E5%B8%83%E5%B1%80/</link>
+      <link>http://localhost:1313/blog/posts/android/08-framelayout%E5%B8%A7%E5%B8%83%E5%B1%80/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/08-framelayout%E5%B8%A7%E5%B8%83%E5%B1%80/</guid>
+      <guid>http://localhost:1313/blog/posts/android/08-framelayout%E5%B8%A7%E5%B8%83%E5%B1%80/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ImageView图片控件</title>
-      <link>http://localhost:1313/blog/posts/06-imageview%E5%9B%BE%E7%89%87%E6%8E%A7%E4%BB%B6/</link>
+      <link>http://localhost:1313/blog/posts/android/06-imageview%E5%9B%BE%E7%89%87%E6%8E%A7%E4%BB%B6/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/06-imageview%E5%9B%BE%E7%89%87%E6%8E%A7%E4%BB%B6/</guid>
+      <guid>http://localhost:1313/blog/posts/android/06-imageview%E5%9B%BE%E7%89%87%E6%8E%A7%E4%BB%B6/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>PopupWindow弹出窗口</title>
-      <link>http://localhost:1313/blog/posts/14-popupwindow/</link>
+      <link>http://localhost:1313/blog/posts/android/14-popupwindow/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/14-popupwindow/</guid>
+      <guid>http://localhost:1313/blog/posts/android/14-popupwindow/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ProgressBar进度条控件</title>
-      <link>http://localhost:1313/blog/posts/07-progressbar%E8%BF%9B%E5%BA%A6%E6%9D%A1%E6%8E%A7%E4%BB%B6/</link>
+      <link>http://localhost:1313/blog/posts/android/07-progressbar%E8%BF%9B%E5%BA%A6%E6%9D%A1%E6%8E%A7%E4%BB%B6/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/07-progressbar%E8%BF%9B%E5%BA%A6%E6%9D%A1%E6%8E%A7%E4%BB%B6/</guid>
+      <guid>http://localhost:1313/blog/posts/android/07-progressbar%E8%BF%9B%E5%BA%A6%E6%9D%A1%E6%8E%A7%E4%BB%B6/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>SimpleAdapter简单适配器</title>
-      <link>http://localhost:1313/blog/posts/17-simpleadapter/</link>
+      <link>http://localhost:1313/blog/posts/android/17-simpleadapter/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/17-simpleadapter/</guid>
+      <guid>http://localhost:1313/blog/posts/android/17-simpleadapter/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>UI基础控件 View</title>
-      <link>http://localhost:1313/blog/posts/04-ui%E5%9F%BA%E7%A1%80%E6%8E%A7%E4%BB%B6-view/</link>
+      <link>http://localhost:1313/blog/posts/android/04-ui%E5%9F%BA%E7%A1%80%E6%8E%A7%E4%BB%B6-view/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/04-ui%E5%9F%BA%E7%A1%80%E6%8E%A7%E4%BB%B6-view/</guid>
+      <guid>http://localhost:1313/blog/posts/android/04-ui%E5%9F%BA%E7%A1%80%E6%8E%A7%E4%BB%B6-view/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ViewHolder模式优化</title>
-      <link>http://localhost:1313/blog/posts/19-viewholder/</link>
+      <link>http://localhost:1313/blog/posts/android/19-viewholder/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/19-viewholder/</guid>
+      <guid>http://localhost:1313/blog/posts/android/19-viewholder/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>相对布局 (RelativeLayout)</title>
-      <link>http://localhost:1313/blog/posts/03-%E7%9B%B8%E5%AF%B9%E5%B8%83%E5%B1%80/</link>
+      <link>http://localhost:1313/blog/posts/android/03-%E7%9B%B8%E5%AF%B9%E5%B8%83%E5%B1%80/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/03-%E7%9B%B8%E5%AF%B9%E5%B8%83%E5%B1%80/</guid>
+      <guid>http://localhost:1313/blog/posts/android/03-%E7%9B%B8%E5%AF%B9%E5%B8%83%E5%B1%80/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>线性布局 (LinearLayout)</title>
-      <link>http://localhost:1313/blog/posts/02-%E7%BA%BF%E6%80%A7%E5%B8%83%E5%B1%80/</link>
+      <link>http://localhost:1313/blog/posts/android/02-%E7%BA%BF%E6%80%A7%E5%B8%83%E5%B1%80/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/02-%E7%BA%BF%E6%80%A7%E5%B8%83%E5%B1%80/</guid>
+      <guid>http://localhost:1313/blog/posts/android/02-%E7%BA%BF%E6%80%A7%E5%B8%83%E5%B1%80/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>菜单组件</title>
-      <link>http://localhost:1313/blog/posts/12-%E8%8F%9C%E5%8D%95%E7%BB%84%E4%BB%B6/</link>
+      <link>http://localhost:1313/blog/posts/android/12-%E8%8F%9C%E5%8D%95%E7%BB%84%E4%BB%B6/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/12-%E8%8F%9C%E5%8D%95%E7%BB%84%E4%BB%B6/</guid>
+      <guid>http://localhost:1313/blog/posts/android/12-%E8%8F%9C%E5%8D%95%E7%BB%84%E4%BB%B6/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>选择控件</title>
-      <link>http://localhost:1313/blog/posts/10-%E9%80%89%E6%8B%A9%E6%8E%A7%E4%BB%B6/</link>
+      <link>http://localhost:1313/blog/posts/android/10-%E9%80%89%E6%8B%A9%E6%8E%A7%E4%BB%B6/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/10-%E9%80%89%E6%8B%A9%E6%8E%A7%E4%BB%B6/</guid>
+      <guid>http://localhost:1313/blog/posts/android/10-%E9%80%89%E6%8B%A9%E6%8E%A7%E4%BB%B6/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/blog/posts/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2%E9%80%BB%E8%BE%91%E6%A8%A1%E5%9E%8B%E5%9B%BE/</link>
+      <link>http://localhost:1313/blog/posts/android/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2%E9%80%BB%E8%BE%91%E6%A8%A1%E5%9E%8B%E5%9B%BE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2%E9%80%BB%E8%BE%91%E6%A8%A1%E5%9E%8B%E5%9B%BE/</guid>
+      <guid>http://localhost:1313/blog/posts/android/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2%E9%80%BB%E8%BE%91%E6%A8%A1%E5%9E%8B%E5%9B%BE/</guid>
       <description></description>
       
     </item>

@@ -13,40 +13,40 @@
     
     <item>
       <title>ArrayAdapter数组适配器</title>
-      <link>http://localhost:1313/blog/posts/15-arrayadapter/</link>
+      <link>http://localhost:1313/blog/posts/android/15-arrayadapter/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/15-arrayadapter/</guid>
+      <guid>http://localhost:1313/blog/posts/android/15-arrayadapter/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>BaseAdapter基础适配器</title>
-      <link>http://localhost:1313/blog/posts/18-baseadapter/</link>
+      <link>http://localhost:1313/blog/posts/android/18-baseadapter/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/18-baseadapter/</guid>
+      <guid>http://localhost:1313/blog/posts/android/18-baseadapter/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>SimpleAdapter简单适配器</title>
-      <link>http://localhost:1313/blog/posts/17-simpleadapter/</link>
+      <link>http://localhost:1313/blog/posts/android/17-simpleadapter/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/17-simpleadapter/</guid>
+      <guid>http://localhost:1313/blog/posts/android/17-simpleadapter/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>ViewHolder模式优化</title>
-      <link>http://localhost:1313/blog/posts/19-viewholder/</link>
+      <link>http://localhost:1313/blog/posts/android/19-viewholder/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/19-viewholder/</guid>
+      <guid>http://localhost:1313/blog/posts/android/19-viewholder/</guid>
       <description></description>
       
     </item>

@@ -13,40 +13,40 @@
     
     <item>
       <title>ConstraintLayout约束布局</title>
-      <link>http://localhost:1313/blog/posts/09-constraintlayout%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80/</link>
+      <link>http://localhost:1313/blog/posts/android/09-constraintlayout%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/09-constraintlayout%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80/</guid>
+      <guid>http://localhost:1313/blog/posts/android/09-constraintlayout%E7%BA%A6%E6%9D%9F%E5%B8%83%E5%B1%80/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>FrameLayout帧布局</title>
-      <link>http://localhost:1313/blog/posts/08-framelayout%E5%B8%A7%E5%B8%83%E5%B1%80/</link>
+      <link>http://localhost:1313/blog/posts/android/08-framelayout%E5%B8%A7%E5%B8%83%E5%B1%80/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/08-framelayout%E5%B8%A7%E5%B8%83%E5%B1%80/</guid>
+      <guid>http://localhost:1313/blog/posts/android/08-framelayout%E5%B8%A7%E5%B8%83%E5%B1%80/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>相对布局 (RelativeLayout)</title>
-      <link>http://localhost:1313/blog/posts/03-%E7%9B%B8%E5%AF%B9%E5%B8%83%E5%B1%80/</link>
+      <link>http://localhost:1313/blog/posts/android/03-%E7%9B%B8%E5%AF%B9%E5%B8%83%E5%B1%80/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/03-%E7%9B%B8%E5%AF%B9%E5%B8%83%E5%B1%80/</guid>
+      <guid>http://localhost:1313/blog/posts/android/03-%E7%9B%B8%E5%AF%B9%E5%B8%83%E5%B1%80/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>线性布局 (LinearLayout)</title>
-      <link>http://localhost:1313/blog/posts/02-%E7%BA%BF%E6%80%A7%E5%B8%83%E5%B1%80/</link>
+      <link>http://localhost:1313/blog/posts/android/02-%E7%BA%BF%E6%80%A7%E5%B8%83%E5%B1%80/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
       <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/posts/02-%E7%BA%BF%E6%80%A7%E5%B8%83%E5%B1%80/</guid>
+      <guid>http://localhost:1313/blog/posts/android/02-%E7%BA%BF%E6%80%A7%E5%B8%83%E5%B1%80/</guid>
       <description></description>
       
     </item>
