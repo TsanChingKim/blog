@@ -4,6 +4,7 @@ date: 2025-01-23
 tags: ["密码", "保护", "私密"]
 categories: ["私密内容"]
 description: "使用密码保护的文章示例"
+password: "mysecret123"  # 整个文档密码
 showComments: true
 ---
 
