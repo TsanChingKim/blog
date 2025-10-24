@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>测试 on TsanChing Kim&#39;s Blog</title>
+    <link>http://localhost:1313/blog/tags/%E6%B5%8B%E8%AF%95/</link>
+    <description>Recent content in 测试 on TsanChing Kim&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>jin1357908642@163.com (TsanChing Kim)</managingEditor>
+    <webMaster>jin1357908642@163.com (TsanChing Kim)</webMaster>
+    <copyright>© 2025 TsanChing Kim</copyright>
+    <lastBuildDate>Thu, 23 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>私密文章示例</title>
+      <link>http://localhost:1313/blog/posts/private-article-example/</link>
+      <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
+      <author>jin1357908642@163.com (TsanChing Kim)</author>
+      <guid>http://localhost:1313/blog/posts/private-article-example/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
