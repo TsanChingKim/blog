@@ -37,6 +37,28 @@ enableEmoji = true
   author = "authors"
   series = "series"
 
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    pageRef = "posts"
+    weight = 10
+  
+  [[menu.main]]
+    name = "Android"
+    parent = "Posts"
+    pageRef = "categories/android-development"
+    weight = 10
+  
+  [[menu.main]]
+    name = "Categories"
+    pageRef = "categories"
+    weight = 20
+  
+  [[menu.main]]
+    name = "Tags"
+    pageRef = "tags"
+    weight = 30
+
 [sitemap]
   changefreq = 'daily'
   filename = 'sitemap.xml'

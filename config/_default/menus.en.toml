@@ -15,21 +15,11 @@
  pageRef = "posts"
  weight = 10
 
-#[[main]]
-#  name = "Parent"
-#  weight = 20
-
-#[[main]]
-#  name = "example sub-menu 1"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
-
-#[[main]]
-#  name = "example sub-menu 2"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
+[[main]]
+ name = "Android"
+ parent = "Posts"
+ pageRef = "categories/android-development"
+ weight = 10
 
 #[[subnavigation]]
 #  name = "An interesting topic"
@@ -51,7 +41,6 @@
  name = "Tags"
  pageRef = "tags"
  weight = 30
-
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before

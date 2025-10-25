@@ -9,77 +9,7 @@
     <managingEditor>jin1357908642@163.com (TsanChing Kim)</managingEditor>
     <webMaster>jin1357908642@163.com (TsanChing Kim)</webMaster>
     <copyright>© 2025 TsanChing Kim</copyright>
-    <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Android</title>
-      <link>http://localhost:1313/blog/tags/android/</link>
-      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
-      <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/tags/android/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Java</title>
-      <link>http://localhost:1313/blog/tags/java/</link>
-      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
-      <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/tags/java/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>LinearLayout</title>
-      <link>http://localhost:1313/blog/tags/linearlayout/</link>
-      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
-      <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/tags/linearlayout/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>UI</title>
-      <link>http://localhost:1313/blog/tags/ui/</link>
-      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
-      <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/tags/ui/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>XML</title>
-      <link>http://localhost:1313/blog/tags/xml/</link>
-      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
-      <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/tags/xml/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>布局</title>
-      <link>http://localhost:1313/blog/tags/%E5%B8%83%E5%B1%80/</link>
-      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
-      <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/tags/%E5%B8%83%E5%B1%80/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>开发方式</title>
-      <link>http://localhost:1313/blog/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F/</link>
-      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
-      <author>jin1357908642@163.com (TsanChing Kim)</author>
-      <guid>http://localhost:1313/blog/tags/%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F/</guid>
-      <description></description>
-      
-    </item>
+    <atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
