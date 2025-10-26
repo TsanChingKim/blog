@@ -58,6 +58,11 @@ enableEmoji = true
     name = "Tags"
     pageRef = "tags"
     weight = 30
+  
+  [[menu.main]]
+    name = "目录"
+    pageRef = "directory"
+    weight = 40
 
 [sitemap]
   changefreq = 'daily'
