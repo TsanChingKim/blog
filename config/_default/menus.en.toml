@@ -43,15 +43,7 @@
 #  pageRef = "categories"
 #  weight = 20
 
-[[main]]
- name = "Tags"
- pageRef = "tags"
- weight = 30
-
-[[main]]
- name = "目录"
- pageRef = "directory"
- weight = 40
+# Tags 和 目录 菜单已移除
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
