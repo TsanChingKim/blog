@@ -11,19 +11,12 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
- name = "Posts"
- pageRef = "posts"
- weight = 10
-
-[[main]]
  name = "Android"
- parent = "Posts"
  pageRef = "posts/android"
  weight = 10
 
 [[main]]
  name = "App Distribute"
- parent = "Posts"
  pageRef = "posts/appDistribute"
  weight = 15
 
