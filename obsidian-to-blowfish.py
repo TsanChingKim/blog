@@ -35,34 +35,46 @@ def convert_yaml_lists_to_json(content):
     将YAML列表格式转换为JSON数组格式
     处理 Categories 和 tags 字段
     """
-    # 匹配Categories字段（不区分大小写）
-    categories_pattern = r'(?i)categories:\s*\n((?:\s*-\s*[^\n]+\n?)+)'
-    
+    # 仅在 Front Matter（--- ... ---）内进行转换，避免将正文中的 "-" 或分隔线误判为列表项
+    front_matter_match = re.search(r'^---\n([\s\S]*?)\n---', content, flags=re.MULTILINE)
+    if not front_matter_match:
+        return content
+
+    front_matter = front_matter_match.group(1)
+
+    # 匹配 Categories 字段（不区分大小写），要求 "- " 后至少有一个空格，防止将 "---" 误判
+    categories_pattern = r'(?im)^(categories:)\s*\n((?:\s*-\s+[^\n]+\n?)+)'
+
     def replace_categories(match):
-        categories_block = match.group(1)
-        # 提取所有列表项
-        items = re.findall(r'-\s*([^\n]+)', categories_block)
-        # 转换为JSON数组格式
+        key = match.group(1)
+        categories_block = match.group(2)
+        items = re.findall(r'-\s+([^\n]+)', categories_block)
         json_items = [f'"{item.strip()}"' for item in items]
         json_str = '[' + ','.join(json_items) + ']'
-        return f'categories: {json_str}\n'
-    
-    # 匹配tags字段（不区分大小写）
-    tags_pattern = r'(?i)tags:\s*\n((?:\s*-\s*[^\n]+\n?)+)'
-    
-    def replace_tags(match):
-        tags_block = match.group(1)
-        # 提取所有列表项
-        items = re.findall(r'-\s*([^\n]+)', tags_block)
-        # 转换为JSON数组格式
+        return f'{key} {json_str}\n'
+
+    # 匹配 tags 字段（不区分大小写），同样要求 "- " 后至少一个空格
+    tags_list_pattern = r'(?im)^(tags:)\s*\n((?:\s*-\s+[^\n]+\n?)+)'
+
+    def replace_tags_list(match):
+        key = match.group(1)
+        tags_block = match.group(2)
+        items = re.findall(r'-\s+([^\n]+)', tags_block)
         json_items = [f'"{item.strip()}"' for item in items]
         json_str = '[' + ','.join(json_items) + ']'
-        return f'tags: {json_str}\n'
-    
-    # 执行替换
-    new_content = re.sub(categories_pattern, replace_categories, content)
-    new_content = re.sub(tags_pattern, replace_tags, new_content)
-    
+        return f'{key} {json_str}\n'
+
+    # 处理 Front Matter 内的转换
+    converted = re.sub(categories_pattern, replace_categories, front_matter)
+    converted = re.sub(tags_list_pattern, replace_tags_list, converted)
+
+    # 若存在独立的 "tags:" 但其下没有列表，统一为空数组
+    converted = re.sub(r'(?im)^(tags:)\s*(\n(?!(\s*-\s+)))', r'\1 []\n', converted)
+
+    # 将转换后的 Front Matter 写回原文
+    start, end = front_matter_match.span(1)
+    new_content = content[:start] + converted + content[end:]
+
     return new_content
 
 def process_file(file_path):

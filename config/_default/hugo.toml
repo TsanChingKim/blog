@@ -57,8 +57,10 @@ enableEmoji = true
   [[menu.main]]
     name = "Tags"
     pageRef = "tags"
+
     weight = 30
-  
+
+
   [[menu.main]]
     name = "目录"
     pageRef = "directory"

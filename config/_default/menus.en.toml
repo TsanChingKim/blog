@@ -21,6 +21,12 @@
  pageRef = "categories/android-development"
  weight = 10
 
+[[main]]
+ name = "App Distribute"
+ parent = "Posts"
+ pageRef = "posts/appDistribute"
+ weight = 15
+
 #[[subnavigation]]
 #  name = "An interesting topic"
 #  pageRef = "tags/interesting-topic"
