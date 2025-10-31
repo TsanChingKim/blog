@@ -6,6 +6,8 @@ robots: all
 summary: 本文详细描述了app上架所需的信息，以及注意事项
 featureimage: images/app-distribute/appDistribute.jpg
 tags: []
+---
+
 # Android 应用商店
 
 ## 所需信息
