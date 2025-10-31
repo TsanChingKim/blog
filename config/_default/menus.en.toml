@@ -12,12 +12,12 @@
 
 [[main]]
  name = "Android"
- pageRef = "posts/android"
+ pageRef = "android"
  weight = 10
 
 [[main]]
  name = "App Distribute"
- pageRef = "posts/appDistribute"
+ pageRef = "appDistribute"
  weight = 15
 
 #[[subnavigation]]
