@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>App Distribute on TsanChing Kim&#39;s Blog</title>
+    <link>http://localhost:1313/blog/appdistribute/</link>
+    <description>Recent content in App Distribute on TsanChing Kim&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>jin1357908642@163.com (TsanChing Kim)</managingEditor>
+    <webMaster>jin1357908642@163.com (TsanChing Kim)</webMaster>
+    <copyright>© 2025 TsanChing Kim</copyright>
+    <lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/appdistribute/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>App 上架应用商店</title>
+      <link>http://localhost:1313/blog/appdistribute/app-%E4%B8%8A%E6%9E%B6%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <author>jin1357908642@163.com (TsanChing Kim)</author>
+      <guid>http://localhost:1313/blog/appdistribute/app-%E4%B8%8A%E6%9E%B6%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97/</guid>
+      <description>本文详细描述了app上架所需的信息，以及注意事项</description>
+      
+    </item>
+    
+  </channel>
+</rss>
