@@ -18,7 +18,7 @@
 [[main]]
  name = "Android"
  parent = "Posts"
- pageRef = "categories/android-development"
+ pageRef = "posts/android"
  weight = 10
 
 [[main]]
@@ -38,10 +38,10 @@
 #  pageRef = "categories/awesome"
 #  weight = 20
 
-[[main]]
- name = "Categories"
- pageRef = "categories"
- weight = 20
+#[[main]]
+#  name = "Categories"
+#  pageRef = "categories"
+#  weight = 20
 
 [[main]]
  name = "Tags"
