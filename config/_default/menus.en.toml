@@ -20,6 +20,16 @@
  pageRef = "appDistribute"
  weight = 15
 
+[[main]]
+ name = "Computer Science"
+ weight = 20
+
+[[main]]
+ name = "Data Structure"
+ parent = "Computer Science"
+ pageRef = "computer-science/data-structure"
+ weight = 10
+
 #[[subnavigation]]
 #  name = "An interesting topic"
 #  pageRef = "tags/interesting-topic"

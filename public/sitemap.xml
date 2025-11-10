@@ -3,6 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>http://localhost:1313/blog/computer-science/data-structure/chapter-1-%E5%BC%95%E8%AE%BA/</loc>
+    <lastmod>2025-11-04T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blog/computer-science/</loc>
+    <lastmod>2025-11-04T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blog/computer-science/data-structure/</loc>
+    <lastmod>2025-11-04T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-11-04T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/blog/appdistribute/</loc>
     <lastmod>2025-10-31T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -10,12 +34,6 @@
   </url>
   <url>
     <loc>http://localhost:1313/blog/appdistribute/app-%E4%B8%8A%E6%9E%B6%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97/</loc>
-    <lastmod>2025-10-31T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-10-31T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

@@ -23,10 +23,101 @@ def convert_mermaid_syntax(content):
     def replace_mermaid(match):
         mermaid_content = match.group(1)
         # 转换为Blowfish的mermaid简码
-        return f'{{{{< mermaid >}}}}\n{mermaid_content}\n{{{{< /mermaid >}}}}'
+        return '{{< mermaid >}}\n' + mermaid_content + '\n{{< /mermaid >}}'
     
     # 执行替换
     new_content = re.sub(mermaid_pattern, replace_mermaid, content, flags=re.DOTALL)
+    
+    return new_content
+
+def convert_latex_to_katex(content):
+    """
+    将Obsidian的LaTeX语法转换为Blowfish的KaTeX语法
+    Obsidian行内公式: $...$ -> KaTeX行内公式: \(...\)
+    Obsidian块级公式: $$...$$ -> KaTeX块级公式: $$...$$ (保持不变)
+    如果检测到数学公式，确保文章包含 {{< katex >}} 短代码
+    """
+    # 检测是否包含数学公式（排除已经转换过的和代码块中的）
+    # 检查是否有未转换的行内公式 $...$ (不是 $$...$$ 的一部分)
+    has_inline_math = bool(re.search(r'(?<!\$)\$(?!\$)[^$\n]+\$(?!\$)', content))
+    # 检查是否有块级公式 $$...$$
+    has_block_math = bool(re.search(r'\$\$[\s\S]*?\$\$', content))
+    has_math = has_inline_math or has_block_math
+    
+    if not has_math:
+        return content
+    
+    # 需要排除代码块中的内容
+    def process_non_code_blocks(text):
+        """处理非代码块部分的数学公式"""
+        parts = []
+        last_end = 0
+        
+        # 找到所有代码块的位置（包括行内代码和代码块）
+        code_block_pattern = r'```[\s\S]*?```|`[^`\n]+`'
+        code_blocks = list(re.finditer(code_block_pattern, text))
+        
+        for code_match in code_blocks:
+            # 处理代码块之前的内容
+            before_code = text[last_end:code_match.start()]
+            # 转换行内公式: $...$ -> \(...\)
+            # 排除块级公式中的 $，以及已经转换过的 \(...\)
+            def replace_inline_math(match):
+                math_content = match.group(1)
+                # 跳过已经转换过的公式
+                if math_content.strip().startswith('\\(') or math_content.strip().startswith('\\['):
+                    return match.group(0)
+                # 转换为KaTeX行内公式格式
+                return r'\(' + math_content + r'\)'
+            
+            # 匹配行内公式，排除块级公式
+            # 使用负向前瞻和回顾来排除 $$...$$ 中的 $
+            inline_math_pattern = r'(?<!\$)\$(?!\$)([^$\n]+?)\$(?!\$)'
+            before_code = re.sub(inline_math_pattern, replace_inline_math, before_code)
+            parts.append(before_code)
+            
+            # 保持代码块不变
+            parts.append(code_match.group(0))
+            last_end = code_match.end()
+        
+        # 处理最后一部分
+        remaining = text[last_end:]
+        def replace_inline_math(match):
+            math_content = match.group(1)
+            if math_content.strip().startswith('\\(') or math_content.strip().startswith('\\['):
+                return match.group(0)
+            return r'\(' + math_content + r'\)'
+        inline_math_pattern = r'(?<!\$)\$(?!\$)([^$\n]+?)\$(?!\$)'
+        remaining = re.sub(inline_math_pattern, replace_inline_math, remaining)
+        parts.append(remaining)
+        
+        return ''.join(parts)
+    
+    new_content = process_non_code_blocks(content)
+    
+    # 检查是否已包含 katex 短代码
+    has_katex_shortcode = bool(re.search(r'\{\{<\s*katex\s*>', new_content, re.IGNORECASE))
+    
+    # 如果没有 katex 短代码，在 front matter 后添加
+    if not has_katex_shortcode:
+        # 查找 front matter 结束位置
+        front_matter_match = re.search(r'^---\n[\s\S]*?\n---\n?', new_content, re.MULTILINE)
+        if front_matter_match:
+            # 在 front matter 后添加 katex 短代码
+            insert_pos = front_matter_match.end()
+            # 检查是否已经有 <!--more--> 标记（在接下来的200个字符内查找）
+            more_tag_match = re.search(r'<!--more-->', new_content[insert_pos:insert_pos+200])
+            if more_tag_match:
+                # 在 <!--more--> 后添加
+                insert_pos = insert_pos + more_tag_match.end()
+                new_content = (new_content[:insert_pos] + 
+                             '\n\n{{< katex >}}\n\n' + 
+                             new_content[insert_pos:])
+            else:
+                # 直接在 front matter 后添加
+                new_content = (new_content[:insert_pos] + 
+                             '\n{{< katex >}}\n\n' + 
+                             new_content[insert_pos:])
     
     return new_content
 
@@ -88,6 +179,9 @@ def process_file(file_path):
         # 先转换Mermaid语法
         content = convert_mermaid_syntax(content)
         
+        # 转换LaTeX到KaTeX
+        content = convert_latex_to_katex(content)
+        
         # 再转换YAML列表格式
         converted_content = convert_yaml_lists_to_json(content)
         
@@ -146,8 +240,11 @@ def preview_changes(file_path):
         # 先转换Mermaid语法
         mermaid_converted = convert_mermaid_syntax(original_content)
         
+        # 转换LaTeX到KaTeX
+        latex_converted = convert_latex_to_katex(mermaid_converted)
+        
         # 再转换YAML列表格式
-        converted_content = convert_yaml_lists_to_json(mermaid_converted)
+        converted_content = convert_yaml_lists_to_json(latex_converted)
         
         if converted_content != original_content:
             print(f"\n文件: {file_path}")
@@ -164,8 +261,31 @@ def preview_changes(file_path):
                     print(f"    新: {{< mermaid >}}\n{match[:100]}...{{< /mermaid >}}")
                 print()
             
+            # 检查LaTeX转换
+            if latex_converted != mermaid_converted:
+                print("LaTeX到KaTeX转换:")
+                # 查找行内公式
+                inline_matches = re.findall(r'(?<!\$)\$(?!\$)[^$\n]+\$(?!\$)', original_content)
+                if inline_matches:
+                    print(f"  发现行内公式 {len(inline_matches)} 个:")
+                    for i, match in enumerate(inline_matches[:5]):  # 只显示前5个
+                        print(f"    {i+1}: ${match} -> \\({match}\\)")
+                    if len(inline_matches) > 5:
+                        print(f"    ... 还有 {len(inline_matches) - 5} 个")
+                
+                # 查找块级公式
+                block_matches = re.findall(r'\$\$[\s\S]*?\$\$', original_content)
+                if block_matches:
+                    print(f"  发现块级公式 {len(block_matches)} 个 (保持不变)")
+                
+                # 检查是否添加了 katex 短代码
+                if re.search(r'\{\{<\s*katex\s*>', latex_converted, re.IGNORECASE):
+                    if not re.search(r'\{\{<\s*katex\s*>', original_content, re.IGNORECASE):
+                        print("  已添加 {{< katex >}} 短代码")
+                print()
+            
             # 检查YAML转换
-            if converted_content != mermaid_converted:
+            if converted_content != latex_converted:
                 print("YAML列表转换:")
                 # 显示变化的部分
                 original_lines = mermaid_converted.split('\n')
@@ -204,6 +324,8 @@ def main():
         print("")
         print("转换内容:")
         print("  Mermaid语法: ```mermaid ... ``` -> {{< mermaid >}} ... {{< /mermaid >}}")
+        print("  LaTeX公式: $...$ -> \\(...\\) (行内), $$...$$ -> $$...$$ (块级)")
+        print("  自动添加 {{< katex >}} 短代码（如果文章包含数学公式）")
         print("  Categories: -> categories: [JSON数组]")
         print("  tags: -> tags: [JSON数组]")
         return

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DataStructure on TsanChing Kim&#39;s Blog</title>
+    <link>http://localhost:1313/blog/categories/datastructure/</link>
+    <description>Recent content in DataStructure on TsanChing Kim&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>jin1357908642@163.com (TsanChing Kim)</managingEditor>
+    <webMaster>jin1357908642@163.com (TsanChing Kim)</webMaster>
+    <copyright>© 2025 TsanChing Kim</copyright>
+    <lastBuildDate>Tue, 04 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/datastructure/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Chapter-1-引论</title>
+      <link>http://localhost:1313/blog/computer-science/data-structure/chapter-1-%E5%BC%95%E8%AE%BA/</link>
+      <pubDate>Tue, 04 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jin1357908642@163.com (TsanChing Kim)</author>
+      <guid>http://localhost:1313/blog/computer-science/data-structure/chapter-1-%E5%BC%95%E8%AE%BA/</guid>
+      <description>本文主要介绍了数据结构所需要的基础数学知识以及java类型的几个性质</description>
+      
+    </item>
+    
+  </channel>
+</rss>
