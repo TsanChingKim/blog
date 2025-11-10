@@ -1001,40 +1001,44 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#应用场景">应用场景</a>
+    <li><a href="#viewpager2-滑动切换视图">ViewPager2 滑动切换视图</a>
       <ul>
-        <li><a href="#1-引导界面">1. 引导界面</a></li>
-        <li><a href="#2-相册多图片预览">2. 相册多图片预览</a></li>
-        <li><a href="#3-多tab页面">3. 多Tab页面</a></li>
-        <li><a href="#4-广告播放">4. 广告播放</a></li>
+        <li><a href="#应用场景">应用场景</a>
+          <ul>
+            <li><a href="#1-引导界面">1. 引导界面</a></li>
+            <li><a href="#2-相册多图片预览">2. 相册多图片预览</a></li>
+            <li><a href="#3-多tab页面">3. 多Tab页面</a></li>
+            <li><a href="#4-广告播放">4. 广告播放</a></li>
+          </ul>
+        </li>
+        <li><a href="#viewpager2-的优势">ViewPager2 的优势</a></li>
+        <li><a href="#引入方式">引入方式</a>
+          <ul>
+            <li><a href="#1-添加依赖">1. 添加依赖</a></li>
+            <li><a href="#2-版本说明">2. 版本说明</a></li>
+          </ul>
+        </li>
+        <li><a href="#使用步骤">使用步骤</a>
+          <ul>
+            <li><a href="#步骤1布局文件中添加-viewpager2">步骤1：布局文件中添加 ViewPager2</a></li>
+            <li><a href="#步骤2创建页面布局">步骤2：创建页面布局</a></li>
+            <li><a href="#步骤3创建适配器">步骤3：创建适配器</a></li>
+            <li><a href="#步骤4数据模型">步骤4：数据模型</a></li>
+            <li><a href="#步骤5在-activity-中使用">步骤5：在 Activity 中使用</a></li>
+          </ul>
+        </li>
+        <li><a href="#高级功能">高级功能</a>
+          <ul>
+            <li><a href="#1-垂直滑动">1. 垂直滑动</a></li>
+            <li><a href="#2-禁用滑动">2. 禁用滑动</a></li>
+            <li><a href="#3-预加载页面">3. 预加载页面</a></li>
+            <li><a href="#4-fragment-支持">4. Fragment 支持</a></li>
+          </ul>
+        </li>
+        <li><a href="#注意事项">注意事项</a></li>
+        <li><a href="#总结">总结</a></li>
       </ul>
     </li>
-    <li><a href="#viewpager2-的优势">ViewPager2 的优势</a></li>
-    <li><a href="#引入方式">引入方式</a>
-      <ul>
-        <li><a href="#1-添加依赖">1. 添加依赖</a></li>
-        <li><a href="#2-版本说明">2. 版本说明</a></li>
-      </ul>
-    </li>
-    <li><a href="#使用步骤">使用步骤</a>
-      <ul>
-        <li><a href="#步骤1布局文件中添加-viewpager2">步骤1：布局文件中添加 ViewPager2</a></li>
-        <li><a href="#步骤2创建页面布局">步骤2：创建页面布局</a></li>
-        <li><a href="#步骤3创建适配器">步骤3：创建适配器</a></li>
-        <li><a href="#步骤4数据模型">步骤4：数据模型</a></li>
-        <li><a href="#步骤5在-activity-中使用">步骤5：在 Activity 中使用</a></li>
-      </ul>
-    </li>
-    <li><a href="#高级功能">高级功能</a>
-      <ul>
-        <li><a href="#1-垂直滑动">1. 垂直滑动</a></li>
-        <li><a href="#2-禁用滑动">2. 禁用滑动</a></li>
-        <li><a href="#3-预加载页面">3. 预加载页面</a></li>
-        <li><a href="#4-fragment-支持">4. Fragment 支持</a></li>
-      </ul>
-    </li>
-    <li><a href="#注意事项">注意事项</a></li>
-    <li><a href="#总结">总结</a></li>
   </ul>
 </nav>
   </div>
@@ -1048,40 +1052,44 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#应用场景">应用场景</a>
+    <li><a href="#viewpager2-滑动切换视图">ViewPager2 滑动切换视图</a>
       <ul>
-        <li><a href="#1-引导界面">1. 引导界面</a></li>
-        <li><a href="#2-相册多图片预览">2. 相册多图片预览</a></li>
-        <li><a href="#3-多tab页面">3. 多Tab页面</a></li>
-        <li><a href="#4-广告播放">4. 广告播放</a></li>
+        <li><a href="#应用场景">应用场景</a>
+          <ul>
+            <li><a href="#1-引导界面">1. 引导界面</a></li>
+            <li><a href="#2-相册多图片预览">2. 相册多图片预览</a></li>
+            <li><a href="#3-多tab页面">3. 多Tab页面</a></li>
+            <li><a href="#4-广告播放">4. 广告播放</a></li>
+          </ul>
+        </li>
+        <li><a href="#viewpager2-的优势">ViewPager2 的优势</a></li>
+        <li><a href="#引入方式">引入方式</a>
+          <ul>
+            <li><a href="#1-添加依赖">1. 添加依赖</a></li>
+            <li><a href="#2-版本说明">2. 版本说明</a></li>
+          </ul>
+        </li>
+        <li><a href="#使用步骤">使用步骤</a>
+          <ul>
+            <li><a href="#步骤1布局文件中添加-viewpager2">步骤1：布局文件中添加 ViewPager2</a></li>
+            <li><a href="#步骤2创建页面布局">步骤2：创建页面布局</a></li>
+            <li><a href="#步骤3创建适配器">步骤3：创建适配器</a></li>
+            <li><a href="#步骤4数据模型">步骤4：数据模型</a></li>
+            <li><a href="#步骤5在-activity-中使用">步骤5：在 Activity 中使用</a></li>
+          </ul>
+        </li>
+        <li><a href="#高级功能">高级功能</a>
+          <ul>
+            <li><a href="#1-垂直滑动">1. 垂直滑动</a></li>
+            <li><a href="#2-禁用滑动">2. 禁用滑动</a></li>
+            <li><a href="#3-预加载页面">3. 预加载页面</a></li>
+            <li><a href="#4-fragment-支持">4. Fragment 支持</a></li>
+          </ul>
+        </li>
+        <li><a href="#注意事项">注意事项</a></li>
+        <li><a href="#总结">总结</a></li>
       </ul>
     </li>
-    <li><a href="#viewpager2-的优势">ViewPager2 的优势</a></li>
-    <li><a href="#引入方式">引入方式</a>
-      <ul>
-        <li><a href="#1-添加依赖">1. 添加依赖</a></li>
-        <li><a href="#2-版本说明">2. 版本说明</a></li>
-      </ul>
-    </li>
-    <li><a href="#使用步骤">使用步骤</a>
-      <ul>
-        <li><a href="#步骤1布局文件中添加-viewpager2">步骤1：布局文件中添加 ViewPager2</a></li>
-        <li><a href="#步骤2创建页面布局">步骤2：创建页面布局</a></li>
-        <li><a href="#步骤3创建适配器">步骤3：创建适配器</a></li>
-        <li><a href="#步骤4数据模型">步骤4：数据模型</a></li>
-        <li><a href="#步骤5在-activity-中使用">步骤5：在 Activity 中使用</a></li>
-      </ul>
-    </li>
-    <li><a href="#高级功能">高级功能</a>
-      <ul>
-        <li><a href="#1-垂直滑动">1. 垂直滑动</a></li>
-        <li><a href="#2-禁用滑动">2. 禁用滑动</a></li>
-        <li><a href="#3-预加载页面">3. 预加载页面</a></li>
-        <li><a href="#4-fragment-支持">4. Fragment 支持</a></li>
-      </ul>
-    </li>
-    <li><a href="#注意事项">注意事项</a></li>
-    <li><a href="#总结">总结</a></li>
   </ul>
 </nav>
   </div>

@@ -1001,46 +1001,50 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#linearlayout-基本属性">LinearLayout 基本属性</a></li>
-    <li><a href="#核心属性详解">核心属性详解</a>
+    <li><a href="#linearlayout-线性布局">LinearLayout 线性布局</a>
       <ul>
-        <li><a href="#1-orientation方向">1. orientation（方向）</a></li>
-        <li><a href="#2-layout_weight权重">2. layout_weight（权重）</a></li>
-        <li><a href="#3-gravity对齐方式">3. gravity（对齐方式）</a></li>
+        <li><a href="#linearlayout-基本属性">LinearLayout 基本属性</a></li>
+        <li><a href="#核心属性详解">核心属性详解</a>
+          <ul>
+            <li><a href="#1-orientation方向">1. orientation（方向）</a></li>
+            <li><a href="#2-layout_weight权重">2. layout_weight（权重）</a></li>
+            <li><a href="#3-gravity对齐方式">3. gravity（对齐方式）</a></li>
+          </ul>
+        </li>
+        <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
+          <ul>
+            <li><a href="#动态创建-linearlayout">动态创建 LinearLayout</a></li>
+            <li><a href="#权重分配示例">权重分配示例</a></li>
+          </ul>
+        </li>
+        <li><a href="#实际应用场景">实际应用场景</a>
+          <ul>
+            <li><a href="#1-登录表单布局">1. 登录表单布局</a></li>
+            <li><a href="#2-底部导航栏">2. 底部导航栏</a></li>
+            <li><a href="#3-商品列表项">3. 商品列表项</a></li>
+          </ul>
+        </li>
+        <li><a href="#嵌套布局示例">嵌套布局示例</a>
+          <ul>
+            <li><a href="#复杂表单布局">复杂表单布局</a></li>
+          </ul>
+        </li>
+        <li><a href="#性能优化建议">性能优化建议</a>
+          <ul>
+            <li><a href="#1-避免过度嵌套">1. 避免过度嵌套</a></li>
+            <li><a href="#2-使用-viewstub-延迟加载">2. 使用 ViewStub 延迟加载</a></li>
+            <li><a href="#3-合理使用权重">3. 合理使用权重</a></li>
+          </ul>
+        </li>
+        <li><a href="#常见问题解决">常见问题解决</a>
+          <ul>
+            <li><a href="#1-权重不生效">1. 权重不生效</a></li>
+            <li><a href="#2-子控件超出容器">2. 子控件超出容器</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
-      <ul>
-        <li><a href="#动态创建-linearlayout">动态创建 LinearLayout</a></li>
-        <li><a href="#权重分配示例">权重分配示例</a></li>
-      </ul>
-    </li>
-    <li><a href="#实际应用场景">实际应用场景</a>
-      <ul>
-        <li><a href="#1-登录表单布局">1. 登录表单布局</a></li>
-        <li><a href="#2-底部导航栏">2. 底部导航栏</a></li>
-        <li><a href="#3-商品列表项">3. 商品列表项</a></li>
-      </ul>
-    </li>
-    <li><a href="#嵌套布局示例">嵌套布局示例</a>
-      <ul>
-        <li><a href="#复杂表单布局">复杂表单布局</a></li>
-      </ul>
-    </li>
-    <li><a href="#性能优化建议">性能优化建议</a>
-      <ul>
-        <li><a href="#1-避免过度嵌套">1. 避免过度嵌套</a></li>
-        <li><a href="#2-使用-viewstub-延迟加载">2. 使用 ViewStub 延迟加载</a></li>
-        <li><a href="#3-合理使用权重">3. 合理使用权重</a></li>
-      </ul>
-    </li>
-    <li><a href="#常见问题解决">常见问题解决</a>
-      <ul>
-        <li><a href="#1-权重不生效">1. 权重不生效</a></li>
-        <li><a href="#2-子控件超出容器">2. 子控件超出容器</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>
@@ -1054,46 +1058,50 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#linearlayout-基本属性">LinearLayout 基本属性</a></li>
-    <li><a href="#核心属性详解">核心属性详解</a>
+    <li><a href="#linearlayout-线性布局">LinearLayout 线性布局</a>
       <ul>
-        <li><a href="#1-orientation方向">1. orientation（方向）</a></li>
-        <li><a href="#2-layout_weight权重">2. layout_weight（权重）</a></li>
-        <li><a href="#3-gravity对齐方式">3. gravity（对齐方式）</a></li>
+        <li><a href="#linearlayout-基本属性">LinearLayout 基本属性</a></li>
+        <li><a href="#核心属性详解">核心属性详解</a>
+          <ul>
+            <li><a href="#1-orientation方向">1. orientation（方向）</a></li>
+            <li><a href="#2-layout_weight权重">2. layout_weight（权重）</a></li>
+            <li><a href="#3-gravity对齐方式">3. gravity（对齐方式）</a></li>
+          </ul>
+        </li>
+        <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
+          <ul>
+            <li><a href="#动态创建-linearlayout">动态创建 LinearLayout</a></li>
+            <li><a href="#权重分配示例">权重分配示例</a></li>
+          </ul>
+        </li>
+        <li><a href="#实际应用场景">实际应用场景</a>
+          <ul>
+            <li><a href="#1-登录表单布局">1. 登录表单布局</a></li>
+            <li><a href="#2-底部导航栏">2. 底部导航栏</a></li>
+            <li><a href="#3-商品列表项">3. 商品列表项</a></li>
+          </ul>
+        </li>
+        <li><a href="#嵌套布局示例">嵌套布局示例</a>
+          <ul>
+            <li><a href="#复杂表单布局">复杂表单布局</a></li>
+          </ul>
+        </li>
+        <li><a href="#性能优化建议">性能优化建议</a>
+          <ul>
+            <li><a href="#1-避免过度嵌套">1. 避免过度嵌套</a></li>
+            <li><a href="#2-使用-viewstub-延迟加载">2. 使用 ViewStub 延迟加载</a></li>
+            <li><a href="#3-合理使用权重">3. 合理使用权重</a></li>
+          </ul>
+        </li>
+        <li><a href="#常见问题解决">常见问题解决</a>
+          <ul>
+            <li><a href="#1-权重不生效">1. 权重不生效</a></li>
+            <li><a href="#2-子控件超出容器">2. 子控件超出容器</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
-      <ul>
-        <li><a href="#动态创建-linearlayout">动态创建 LinearLayout</a></li>
-        <li><a href="#权重分配示例">权重分配示例</a></li>
-      </ul>
-    </li>
-    <li><a href="#实际应用场景">实际应用场景</a>
-      <ul>
-        <li><a href="#1-登录表单布局">1. 登录表单布局</a></li>
-        <li><a href="#2-底部导航栏">2. 底部导航栏</a></li>
-        <li><a href="#3-商品列表项">3. 商品列表项</a></li>
-      </ul>
-    </li>
-    <li><a href="#嵌套布局示例">嵌套布局示例</a>
-      <ul>
-        <li><a href="#复杂表单布局">复杂表单布局</a></li>
-      </ul>
-    </li>
-    <li><a href="#性能优化建议">性能优化建议</a>
-      <ul>
-        <li><a href="#1-避免过度嵌套">1. 避免过度嵌套</a></li>
-        <li><a href="#2-使用-viewstub-延迟加载">2. 使用 ViewStub 延迟加载</a></li>
-        <li><a href="#3-合理使用权重">3. 合理使用权重</a></li>
-      </ul>
-    </li>
-    <li><a href="#常见问题解决">常见问题解决</a>
-      <ul>
-        <li><a href="#1-权重不生效">1. 权重不生效</a></li>
-        <li><a href="#2-子控件超出容器">2. 子控件超出容器</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>

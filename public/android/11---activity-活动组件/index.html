@@ -1011,49 +1011,53 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#activity-基本概念">Activity 基本概念</a>
+    <li><a href="#activity-活动组件">Activity 活动组件</a>
       <ul>
-        <li><a href="#什么是-activity">什么是 Activity</a></li>
-        <li><a href="#activity-与-layout-的关系">Activity 与 Layout 的关系</a></li>
+        <li><a href="#activity-基本概念">Activity 基本概念</a>
+          <ul>
+            <li><a href="#什么是-activity">什么是 Activity</a></li>
+            <li><a href="#activity-与-layout-的关系">Activity 与 Layout 的关系</a></li>
+          </ul>
+        </li>
+        <li><a href="#activity-启动方式">Activity 启动方式</a>
+          <ul>
+            <li><a href="#1-显式启动">1. 显式启动</a></li>
+            <li><a href="#2-隐式启动">2. 隐式启动</a></li>
+            <li><a href="#3-startactivityforresult">3. startActivityForResult</a></li>
+          </ul>
+        </li>
+        <li><a href="#activity-启动模式">Activity 启动模式</a>
+          <ul>
+            <li><a href="#1-standard标准模式">1. Standard（标准模式）</a></li>
+            <li><a href="#2-singletop顶部复用模式">2. SingleTop（顶部复用模式）</a></li>
+            <li><a href="#3-singletask单任务模式">3. SingleTask（单任务模式）</a></li>
+            <li><a href="#4-singleinstance单实例模式">4. SingleInstance（单实例模式）</a></li>
+          </ul>
+        </li>
+        <li><a href="#activity-生命周期">Activity 生命周期</a>
+          <ul>
+            <li><a href="#生命周期方法详解">生命周期方法详解</a></li>
+            <li><a href="#生命周期状态图">生命周期状态图</a></li>
+            <li><a href="#保存和恢复状态">保存和恢复状态</a></li>
+          </ul>
+        </li>
+        <li><a href="#activity-数据传递">Activity 数据传递</a>
+          <ul>
+            <li><a href="#1-传递简单数据">1. 传递简单数据</a></li>
+            <li><a href="#2-传递对象数据">2. 传递对象数据</a></li>
+            <li><a href="#3-返回数据给上一个-activity">3. 返回数据给上一个 Activity</a></li>
+          </ul>
+        </li>
+        <li><a href="#activity-最佳实践">Activity 最佳实践</a>
+          <ul>
+            <li><a href="#1-内存泄漏防护">1. 内存泄漏防护</a></li>
+            <li><a href="#2-状态保存和恢复">2. 状态保存和恢复</a></li>
+            <li><a href="#3-权限处理">3. 权限处理</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#activity-启动方式">Activity 启动方式</a>
-      <ul>
-        <li><a href="#1-显式启动">1. 显式启动</a></li>
-        <li><a href="#2-隐式启动">2. 隐式启动</a></li>
-        <li><a href="#3-startactivityforresult">3. startActivityForResult</a></li>
-      </ul>
-    </li>
-    <li><a href="#activity-启动模式">Activity 启动模式</a>
-      <ul>
-        <li><a href="#1-standard标准模式">1. Standard（标准模式）</a></li>
-        <li><a href="#2-singletop顶部复用模式">2. SingleTop（顶部复用模式）</a></li>
-        <li><a href="#3-singletask单任务模式">3. SingleTask（单任务模式）</a></li>
-        <li><a href="#4-singleinstance单实例模式">4. SingleInstance（单实例模式）</a></li>
-      </ul>
-    </li>
-    <li><a href="#activity-生命周期">Activity 生命周期</a>
-      <ul>
-        <li><a href="#生命周期方法详解">生命周期方法详解</a></li>
-        <li><a href="#生命周期状态图">生命周期状态图</a></li>
-        <li><a href="#保存和恢复状态">保存和恢复状态</a></li>
-      </ul>
-    </li>
-    <li><a href="#activity-数据传递">Activity 数据传递</a>
-      <ul>
-        <li><a href="#1-传递简单数据">1. 传递简单数据</a></li>
-        <li><a href="#2-传递对象数据">2. 传递对象数据</a></li>
-        <li><a href="#3-返回数据给上一个-activity">3. 返回数据给上一个 Activity</a></li>
-      </ul>
-    </li>
-    <li><a href="#activity-最佳实践">Activity 最佳实践</a>
-      <ul>
-        <li><a href="#1-内存泄漏防护">1. 内存泄漏防护</a></li>
-        <li><a href="#2-状态保存和恢复">2. 状态保存和恢复</a></li>
-        <li><a href="#3-权限处理">3. 权限处理</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>
@@ -1067,49 +1071,53 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#activity-基本概念">Activity 基本概念</a>
+    <li><a href="#activity-活动组件">Activity 活动组件</a>
       <ul>
-        <li><a href="#什么是-activity">什么是 Activity</a></li>
-        <li><a href="#activity-与-layout-的关系">Activity 与 Layout 的关系</a></li>
+        <li><a href="#activity-基本概念">Activity 基本概念</a>
+          <ul>
+            <li><a href="#什么是-activity">什么是 Activity</a></li>
+            <li><a href="#activity-与-layout-的关系">Activity 与 Layout 的关系</a></li>
+          </ul>
+        </li>
+        <li><a href="#activity-启动方式">Activity 启动方式</a>
+          <ul>
+            <li><a href="#1-显式启动">1. 显式启动</a></li>
+            <li><a href="#2-隐式启动">2. 隐式启动</a></li>
+            <li><a href="#3-startactivityforresult">3. startActivityForResult</a></li>
+          </ul>
+        </li>
+        <li><a href="#activity-启动模式">Activity 启动模式</a>
+          <ul>
+            <li><a href="#1-standard标准模式">1. Standard（标准模式）</a></li>
+            <li><a href="#2-singletop顶部复用模式">2. SingleTop（顶部复用模式）</a></li>
+            <li><a href="#3-singletask单任务模式">3. SingleTask（单任务模式）</a></li>
+            <li><a href="#4-singleinstance单实例模式">4. SingleInstance（单实例模式）</a></li>
+          </ul>
+        </li>
+        <li><a href="#activity-生命周期">Activity 生命周期</a>
+          <ul>
+            <li><a href="#生命周期方法详解">生命周期方法详解</a></li>
+            <li><a href="#生命周期状态图">生命周期状态图</a></li>
+            <li><a href="#保存和恢复状态">保存和恢复状态</a></li>
+          </ul>
+        </li>
+        <li><a href="#activity-数据传递">Activity 数据传递</a>
+          <ul>
+            <li><a href="#1-传递简单数据">1. 传递简单数据</a></li>
+            <li><a href="#2-传递对象数据">2. 传递对象数据</a></li>
+            <li><a href="#3-返回数据给上一个-activity">3. 返回数据给上一个 Activity</a></li>
+          </ul>
+        </li>
+        <li><a href="#activity-最佳实践">Activity 最佳实践</a>
+          <ul>
+            <li><a href="#1-内存泄漏防护">1. 内存泄漏防护</a></li>
+            <li><a href="#2-状态保存和恢复">2. 状态保存和恢复</a></li>
+            <li><a href="#3-权限处理">3. 权限处理</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#activity-启动方式">Activity 启动方式</a>
-      <ul>
-        <li><a href="#1-显式启动">1. 显式启动</a></li>
-        <li><a href="#2-隐式启动">2. 隐式启动</a></li>
-        <li><a href="#3-startactivityforresult">3. startActivityForResult</a></li>
-      </ul>
-    </li>
-    <li><a href="#activity-启动模式">Activity 启动模式</a>
-      <ul>
-        <li><a href="#1-standard标准模式">1. Standard（标准模式）</a></li>
-        <li><a href="#2-singletop顶部复用模式">2. SingleTop（顶部复用模式）</a></li>
-        <li><a href="#3-singletask单任务模式">3. SingleTask（单任务模式）</a></li>
-        <li><a href="#4-singleinstance单实例模式">4. SingleInstance（单实例模式）</a></li>
-      </ul>
-    </li>
-    <li><a href="#activity-生命周期">Activity 生命周期</a>
-      <ul>
-        <li><a href="#生命周期方法详解">生命周期方法详解</a></li>
-        <li><a href="#生命周期状态图">生命周期状态图</a></li>
-        <li><a href="#保存和恢复状态">保存和恢复状态</a></li>
-      </ul>
-    </li>
-    <li><a href="#activity-数据传递">Activity 数据传递</a>
-      <ul>
-        <li><a href="#1-传递简单数据">1. 传递简单数据</a></li>
-        <li><a href="#2-传递对象数据">2. 传递对象数据</a></li>
-        <li><a href="#3-返回数据给上一个-activity">3. 返回数据给上一个 Activity</a></li>
-      </ul>
-    </li>
-    <li><a href="#activity-最佳实践">Activity 最佳实践</a>
-      <ul>
-        <li><a href="#1-内存泄漏防护">1. 内存泄漏防护</a></li>
-        <li><a href="#2-状态保存和恢复">2. 状态保存和恢复</a></li>
-        <li><a href="#3-权限处理">3. 权限处理</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>

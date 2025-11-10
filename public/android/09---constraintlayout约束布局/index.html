@@ -1001,46 +1001,50 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#constraintlayout-基本概念">ConstraintLayout 基本概念</a>
+    <li><a href="#constraintlayout-约束布局">ConstraintLayout 约束布局</a>
       <ul>
-        <li><a href="#什么是约束布局">什么是约束布局</a></li>
-        <li><a href="#约束布局的优势">约束布局的优势</a></li>
+        <li><a href="#constraintlayout-基本概念">ConstraintLayout 基本概念</a>
+          <ul>
+            <li><a href="#什么是约束布局">什么是约束布局</a></li>
+            <li><a href="#约束布局的优势">约束布局的优势</a></li>
+          </ul>
+        </li>
+        <li><a href="#约束属性详解">约束属性详解</a>
+          <ul>
+            <li><a href="#1-对齐约束">1. 对齐约束</a></li>
+            <li><a href="#2-位置约束">2. 位置约束</a></li>
+            <li><a href="#3-偏移约束">3. 偏移约束</a></li>
+          </ul>
+        </li>
+        <li><a href="#基本使用示例">基本使用示例</a>
+          <ul>
+            <li><a href="#1-居中布局">1. 居中布局</a></li>
+            <li><a href="#2-相对定位">2. 相对定位</a></li>
+            <li><a href="#3-偏移布局">3. 偏移布局</a></li>
+          </ul>
+        </li>
+        <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
+          <ul>
+            <li><a href="#动态创建约束布局">动态创建约束布局</a></li>
+            <li><a href="#复杂约束布局示例">复杂约束布局示例</a></li>
+          </ul>
+        </li>
+        <li><a href="#实际应用场景">实际应用场景</a>
+          <ul>
+            <li><a href="#1-登录表单">1. 登录表单</a></li>
+            <li><a href="#2-响应式卡片布局">2. 响应式卡片布局</a></li>
+          </ul>
+        </li>
+        <li><a href="#性能优化建议">性能优化建议</a>
+          <ul>
+            <li><a href="#1-减少嵌套层级">1. 减少嵌套层级</a></li>
+            <li><a href="#2-使用-guideline">2. 使用 Guideline</a></li>
+            <li><a href="#3-使用-barrier">3. 使用 Barrier</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#约束属性详解">约束属性详解</a>
-      <ul>
-        <li><a href="#1-对齐约束">1. 对齐约束</a></li>
-        <li><a href="#2-位置约束">2. 位置约束</a></li>
-        <li><a href="#3-偏移约束">3. 偏移约束</a></li>
-      </ul>
-    </li>
-    <li><a href="#基本使用示例">基本使用示例</a>
-      <ul>
-        <li><a href="#1-居中布局">1. 居中布局</a></li>
-        <li><a href="#2-相对定位">2. 相对定位</a></li>
-        <li><a href="#3-偏移布局">3. 偏移布局</a></li>
-      </ul>
-    </li>
-    <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
-      <ul>
-        <li><a href="#动态创建约束布局">动态创建约束布局</a></li>
-        <li><a href="#复杂约束布局示例">复杂约束布局示例</a></li>
-      </ul>
-    </li>
-    <li><a href="#实际应用场景">实际应用场景</a>
-      <ul>
-        <li><a href="#1-登录表单">1. 登录表单</a></li>
-        <li><a href="#2-响应式卡片布局">2. 响应式卡片布局</a></li>
-      </ul>
-    </li>
-    <li><a href="#性能优化建议">性能优化建议</a>
-      <ul>
-        <li><a href="#1-减少嵌套层级">1. 减少嵌套层级</a></li>
-        <li><a href="#2-使用-guideline">2. 使用 Guideline</a></li>
-        <li><a href="#3-使用-barrier">3. 使用 Barrier</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>
@@ -1054,46 +1058,50 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#constraintlayout-基本概念">ConstraintLayout 基本概念</a>
+    <li><a href="#constraintlayout-约束布局">ConstraintLayout 约束布局</a>
       <ul>
-        <li><a href="#什么是约束布局">什么是约束布局</a></li>
-        <li><a href="#约束布局的优势">约束布局的优势</a></li>
+        <li><a href="#constraintlayout-基本概念">ConstraintLayout 基本概念</a>
+          <ul>
+            <li><a href="#什么是约束布局">什么是约束布局</a></li>
+            <li><a href="#约束布局的优势">约束布局的优势</a></li>
+          </ul>
+        </li>
+        <li><a href="#约束属性详解">约束属性详解</a>
+          <ul>
+            <li><a href="#1-对齐约束">1. 对齐约束</a></li>
+            <li><a href="#2-位置约束">2. 位置约束</a></li>
+            <li><a href="#3-偏移约束">3. 偏移约束</a></li>
+          </ul>
+        </li>
+        <li><a href="#基本使用示例">基本使用示例</a>
+          <ul>
+            <li><a href="#1-居中布局">1. 居中布局</a></li>
+            <li><a href="#2-相对定位">2. 相对定位</a></li>
+            <li><a href="#3-偏移布局">3. 偏移布局</a></li>
+          </ul>
+        </li>
+        <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
+          <ul>
+            <li><a href="#动态创建约束布局">动态创建约束布局</a></li>
+            <li><a href="#复杂约束布局示例">复杂约束布局示例</a></li>
+          </ul>
+        </li>
+        <li><a href="#实际应用场景">实际应用场景</a>
+          <ul>
+            <li><a href="#1-登录表单">1. 登录表单</a></li>
+            <li><a href="#2-响应式卡片布局">2. 响应式卡片布局</a></li>
+          </ul>
+        </li>
+        <li><a href="#性能优化建议">性能优化建议</a>
+          <ul>
+            <li><a href="#1-减少嵌套层级">1. 减少嵌套层级</a></li>
+            <li><a href="#2-使用-guideline">2. 使用 Guideline</a></li>
+            <li><a href="#3-使用-barrier">3. 使用 Barrier</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#约束属性详解">约束属性详解</a>
-      <ul>
-        <li><a href="#1-对齐约束">1. 对齐约束</a></li>
-        <li><a href="#2-位置约束">2. 位置约束</a></li>
-        <li><a href="#3-偏移约束">3. 偏移约束</a></li>
-      </ul>
-    </li>
-    <li><a href="#基本使用示例">基本使用示例</a>
-      <ul>
-        <li><a href="#1-居中布局">1. 居中布局</a></li>
-        <li><a href="#2-相对定位">2. 相对定位</a></li>
-        <li><a href="#3-偏移布局">3. 偏移布局</a></li>
-      </ul>
-    </li>
-    <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
-      <ul>
-        <li><a href="#动态创建约束布局">动态创建约束布局</a></li>
-        <li><a href="#复杂约束布局示例">复杂约束布局示例</a></li>
-      </ul>
-    </li>
-    <li><a href="#实际应用场景">实际应用场景</a>
-      <ul>
-        <li><a href="#1-登录表单">1. 登录表单</a></li>
-        <li><a href="#2-响应式卡片布局">2. 响应式卡片布局</a></li>
-      </ul>
-    </li>
-    <li><a href="#性能优化建议">性能优化建议</a>
-      <ul>
-        <li><a href="#1-减少嵌套层级">1. 减少嵌套层级</a></li>
-        <li><a href="#2-使用-guideline">2. 使用 Guideline</a></li>
-        <li><a href="#3-使用-barrier">3. 使用 Barrier</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>

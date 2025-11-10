@@ -1001,51 +1001,55 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#button-基本属性">Button 基本属性</a></li>
-    <li><a href="#点击事件实现方式">点击事件实现方式</a>
+    <li><a href="#button-按钮控件">Button 按钮控件</a>
       <ul>
-        <li><a href="#1-自定义内部类实现">1. 自定义内部类实现</a></li>
-        <li><a href="#2-匿名内部类实现">2. 匿名内部类实现</a></li>
-        <li><a href="#3-lambda-表达式实现推荐">3. Lambda 表达式实现（推荐）</a></li>
-        <li><a href="#4-实现接口方式">4. 实现接口方式</a></li>
-        <li><a href="#5-xml-绑定函数实现">5. XML 绑定函数实现</a>
+        <li><a href="#button-基本属性">Button 基本属性</a></li>
+        <li><a href="#点击事件实现方式">点击事件实现方式</a>
           <ul>
-            <li><a href="#xml-布局文件">XML 布局文件</a></li>
-            <li><a href="#kotlin-代码">Kotlin 代码</a></li>
+            <li><a href="#1-自定义内部类实现">1. 自定义内部类实现</a></li>
+            <li><a href="#2-匿名内部类实现">2. 匿名内部类实现</a></li>
+            <li><a href="#3-lambda-表达式实现推荐">3. Lambda 表达式实现（推荐）</a></li>
+            <li><a href="#4-实现接口方式">4. 实现接口方式</a></li>
+            <li><a href="#5-xml-绑定函数实现">5. XML 绑定函数实现</a>
+              <ul>
+                <li><a href="#xml-布局文件">XML 布局文件</a></li>
+                <li><a href="#kotlin-代码">Kotlin 代码</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
+        <li><a href="#button-样式定制">Button 样式定制</a>
+          <ul>
+            <li><a href="#自定义背景样式">自定义背景样式</a></li>
+            <li><a href="#应用自定义样式">应用自定义样式</a></li>
+          </ul>
+        </li>
+        <li><a href="#特殊按钮类型">特殊按钮类型</a>
+          <ul>
+            <li><a href="#imagebutton-图片按钮">ImageButton 图片按钮</a></li>
+            <li><a href="#floatingactionbutton-悬浮按钮">FloatingActionButton 悬浮按钮</a></li>
+          </ul>
+        </li>
+        <li><a href="#按钮状态管理">按钮状态管理</a>
+          <ul>
+            <li><a href="#动态控制按钮状态">动态控制按钮状态</a></li>
+          </ul>
+        </li>
+        <li><a href="#按钮动画效果">按钮动画效果</a>
+          <ul>
+            <li><a href="#点击动画">点击动画</a></li>
+          </ul>
+        </li>
+        <li><a href="#最佳实践">最佳实践</a>
+          <ul>
+            <li><a href="#1-事件处理方式选择">1. 事件处理方式选择</a></li>
+            <li><a href="#2-性能优化">2. 性能优化</a></li>
+            <li><a href="#3-无障碍支持">3. 无障碍支持</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#button-样式定制">Button 样式定制</a>
-      <ul>
-        <li><a href="#自定义背景样式">自定义背景样式</a></li>
-        <li><a href="#应用自定义样式">应用自定义样式</a></li>
-      </ul>
-    </li>
-    <li><a href="#特殊按钮类型">特殊按钮类型</a>
-      <ul>
-        <li><a href="#imagebutton-图片按钮">ImageButton 图片按钮</a></li>
-        <li><a href="#floatingactionbutton-悬浮按钮">FloatingActionButton 悬浮按钮</a></li>
-      </ul>
-    </li>
-    <li><a href="#按钮状态管理">按钮状态管理</a>
-      <ul>
-        <li><a href="#动态控制按钮状态">动态控制按钮状态</a></li>
-      </ul>
-    </li>
-    <li><a href="#按钮动画效果">按钮动画效果</a>
-      <ul>
-        <li><a href="#点击动画">点击动画</a></li>
-      </ul>
-    </li>
-    <li><a href="#最佳实践">最佳实践</a>
-      <ul>
-        <li><a href="#1-事件处理方式选择">1. 事件处理方式选择</a></li>
-        <li><a href="#2-性能优化">2. 性能优化</a></li>
-        <li><a href="#3-无障碍支持">3. 无障碍支持</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>
@@ -1059,51 +1063,55 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#button-基本属性">Button 基本属性</a></li>
-    <li><a href="#点击事件实现方式">点击事件实现方式</a>
+    <li><a href="#button-按钮控件">Button 按钮控件</a>
       <ul>
-        <li><a href="#1-自定义内部类实现">1. 自定义内部类实现</a></li>
-        <li><a href="#2-匿名内部类实现">2. 匿名内部类实现</a></li>
-        <li><a href="#3-lambda-表达式实现推荐">3. Lambda 表达式实现（推荐）</a></li>
-        <li><a href="#4-实现接口方式">4. 实现接口方式</a></li>
-        <li><a href="#5-xml-绑定函数实现">5. XML 绑定函数实现</a>
+        <li><a href="#button-基本属性">Button 基本属性</a></li>
+        <li><a href="#点击事件实现方式">点击事件实现方式</a>
           <ul>
-            <li><a href="#xml-布局文件">XML 布局文件</a></li>
-            <li><a href="#kotlin-代码">Kotlin 代码</a></li>
+            <li><a href="#1-自定义内部类实现">1. 自定义内部类实现</a></li>
+            <li><a href="#2-匿名内部类实现">2. 匿名内部类实现</a></li>
+            <li><a href="#3-lambda-表达式实现推荐">3. Lambda 表达式实现（推荐）</a></li>
+            <li><a href="#4-实现接口方式">4. 实现接口方式</a></li>
+            <li><a href="#5-xml-绑定函数实现">5. XML 绑定函数实现</a>
+              <ul>
+                <li><a href="#xml-布局文件">XML 布局文件</a></li>
+                <li><a href="#kotlin-代码">Kotlin 代码</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
+        <li><a href="#button-样式定制">Button 样式定制</a>
+          <ul>
+            <li><a href="#自定义背景样式">自定义背景样式</a></li>
+            <li><a href="#应用自定义样式">应用自定义样式</a></li>
+          </ul>
+        </li>
+        <li><a href="#特殊按钮类型">特殊按钮类型</a>
+          <ul>
+            <li><a href="#imagebutton-图片按钮">ImageButton 图片按钮</a></li>
+            <li><a href="#floatingactionbutton-悬浮按钮">FloatingActionButton 悬浮按钮</a></li>
+          </ul>
+        </li>
+        <li><a href="#按钮状态管理">按钮状态管理</a>
+          <ul>
+            <li><a href="#动态控制按钮状态">动态控制按钮状态</a></li>
+          </ul>
+        </li>
+        <li><a href="#按钮动画效果">按钮动画效果</a>
+          <ul>
+            <li><a href="#点击动画">点击动画</a></li>
+          </ul>
+        </li>
+        <li><a href="#最佳实践">最佳实践</a>
+          <ul>
+            <li><a href="#1-事件处理方式选择">1. 事件处理方式选择</a></li>
+            <li><a href="#2-性能优化">2. 性能优化</a></li>
+            <li><a href="#3-无障碍支持">3. 无障碍支持</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#button-样式定制">Button 样式定制</a>
-      <ul>
-        <li><a href="#自定义背景样式">自定义背景样式</a></li>
-        <li><a href="#应用自定义样式">应用自定义样式</a></li>
-      </ul>
-    </li>
-    <li><a href="#特殊按钮类型">特殊按钮类型</a>
-      <ul>
-        <li><a href="#imagebutton-图片按钮">ImageButton 图片按钮</a></li>
-        <li><a href="#floatingactionbutton-悬浮按钮">FloatingActionButton 悬浮按钮</a></li>
-      </ul>
-    </li>
-    <li><a href="#按钮状态管理">按钮状态管理</a>
-      <ul>
-        <li><a href="#动态控制按钮状态">动态控制按钮状态</a></li>
-      </ul>
-    </li>
-    <li><a href="#按钮动画效果">按钮动画效果</a>
-      <ul>
-        <li><a href="#点击动画">点击动画</a></li>
-      </ul>
-    </li>
-    <li><a href="#最佳实践">最佳实践</a>
-      <ul>
-        <li><a href="#1-事件处理方式选择">1. 事件处理方式选择</a></li>
-        <li><a href="#2-性能优化">2. 性能优化</a></li>
-        <li><a href="#3-无障碍支持">3. 无障碍支持</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>

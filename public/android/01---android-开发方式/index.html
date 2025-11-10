@@ -1001,44 +1001,48 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#开发方式对比">开发方式对比</a>
+    <li><a href="#android-开发方式">Android 开发方式</a>
       <ul>
-        <li><a href="#1-javakotlin-代码开发">1. Java/Kotlin 代码开发</a>
+        <li><a href="#开发方式对比">开发方式对比</a>
           <ul>
-            <li><a href="#特点">特点</a></li>
-            <li><a href="#实现步骤">实现步骤</a></li>
-            <li><a href="#代码示例">代码示例</a></li>
+            <li><a href="#1-javakotlin-代码开发">1. Java/Kotlin 代码开发</a>
+              <ul>
+                <li><a href="#特点">特点</a></li>
+                <li><a href="#实现步骤">实现步骤</a></li>
+                <li><a href="#代码示例">代码示例</a></li>
+              </ul>
+            </li>
+            <li><a href="#2-xml-文件开发">2. XML 文件开发</a>
+              <ul>
+                <li><a href="#特点-1">特点</a></li>
+                <li><a href="#实现步骤-1">实现步骤</a></li>
+                <li><a href="#xml-布局示例">XML 布局示例</a></li>
+                <li><a href="#activity-代码">Activity 代码</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
-        <li><a href="#2-xml-文件开发">2. XML 文件开发</a>
+        <li><a href="#混合开发方式">混合开发方式</a>
           <ul>
-            <li><a href="#特点-1">特点</a></li>
-            <li><a href="#实现步骤-1">实现步骤</a></li>
-            <li><a href="#xml-布局示例">XML 布局示例</a></li>
-            <li><a href="#activity-代码">Activity 代码</a></li>
+            <li><a href="#混合开发示例">混合开发示例</a></li>
+            <li><a href="#混合布局文件">混合布局文件</a></li>
           </ul>
         </li>
+        <li><a href="#开发方式选择建议">开发方式选择建议</a>
+          <ul>
+            <li><a href="#推荐使用-xml-开发的情况">推荐使用 XML 开发的情况</a></li>
+            <li><a href="#推荐使用代码开发的情况">推荐使用代码开发的情况</a></li>
+          </ul>
+        </li>
+        <li><a href="#最佳实践">最佳实践</a>
+          <ul>
+            <li><a href="#1-布局优化">1. 布局优化</a></li>
+            <li><a href="#2-性能优化">2. 性能优化</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#混合开发方式">混合开发方式</a>
-      <ul>
-        <li><a href="#混合开发示例">混合开发示例</a></li>
-        <li><a href="#混合布局文件">混合布局文件</a></li>
-      </ul>
-    </li>
-    <li><a href="#开发方式选择建议">开发方式选择建议</a>
-      <ul>
-        <li><a href="#推荐使用-xml-开发的情况">推荐使用 XML 开发的情况</a></li>
-        <li><a href="#推荐使用代码开发的情况">推荐使用代码开发的情况</a></li>
-      </ul>
-    </li>
-    <li><a href="#最佳实践">最佳实践</a>
-      <ul>
-        <li><a href="#1-布局优化">1. 布局优化</a></li>
-        <li><a href="#2-性能优化">2. 性能优化</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>
@@ -1052,44 +1056,48 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#开发方式对比">开发方式对比</a>
+    <li><a href="#android-开发方式">Android 开发方式</a>
       <ul>
-        <li><a href="#1-javakotlin-代码开发">1. Java/Kotlin 代码开发</a>
+        <li><a href="#开发方式对比">开发方式对比</a>
           <ul>
-            <li><a href="#特点">特点</a></li>
-            <li><a href="#实现步骤">实现步骤</a></li>
-            <li><a href="#代码示例">代码示例</a></li>
+            <li><a href="#1-javakotlin-代码开发">1. Java/Kotlin 代码开发</a>
+              <ul>
+                <li><a href="#特点">特点</a></li>
+                <li><a href="#实现步骤">实现步骤</a></li>
+                <li><a href="#代码示例">代码示例</a></li>
+              </ul>
+            </li>
+            <li><a href="#2-xml-文件开发">2. XML 文件开发</a>
+              <ul>
+                <li><a href="#特点-1">特点</a></li>
+                <li><a href="#实现步骤-1">实现步骤</a></li>
+                <li><a href="#xml-布局示例">XML 布局示例</a></li>
+                <li><a href="#activity-代码">Activity 代码</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
-        <li><a href="#2-xml-文件开发">2. XML 文件开发</a>
+        <li><a href="#混合开发方式">混合开发方式</a>
           <ul>
-            <li><a href="#特点-1">特点</a></li>
-            <li><a href="#实现步骤-1">实现步骤</a></li>
-            <li><a href="#xml-布局示例">XML 布局示例</a></li>
-            <li><a href="#activity-代码">Activity 代码</a></li>
+            <li><a href="#混合开发示例">混合开发示例</a></li>
+            <li><a href="#混合布局文件">混合布局文件</a></li>
           </ul>
         </li>
+        <li><a href="#开发方式选择建议">开发方式选择建议</a>
+          <ul>
+            <li><a href="#推荐使用-xml-开发的情况">推荐使用 XML 开发的情况</a></li>
+            <li><a href="#推荐使用代码开发的情况">推荐使用代码开发的情况</a></li>
+          </ul>
+        </li>
+        <li><a href="#最佳实践">最佳实践</a>
+          <ul>
+            <li><a href="#1-布局优化">1. 布局优化</a></li>
+            <li><a href="#2-性能优化">2. 性能优化</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#混合开发方式">混合开发方式</a>
-      <ul>
-        <li><a href="#混合开发示例">混合开发示例</a></li>
-        <li><a href="#混合布局文件">混合布局文件</a></li>
-      </ul>
-    </li>
-    <li><a href="#开发方式选择建议">开发方式选择建议</a>
-      <ul>
-        <li><a href="#推荐使用-xml-开发的情况">推荐使用 XML 开发的情况</a></li>
-        <li><a href="#推荐使用代码开发的情况">推荐使用代码开发的情况</a></li>
-      </ul>
-    </li>
-    <li><a href="#最佳实践">最佳实践</a>
-      <ul>
-        <li><a href="#1-布局优化">1. 布局优化</a></li>
-        <li><a href="#2-性能优化">2. 性能优化</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>

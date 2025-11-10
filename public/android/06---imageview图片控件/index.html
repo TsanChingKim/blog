@@ -1001,53 +1001,57 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#imageview-基本属性">ImageView 基本属性</a></li>
-    <li><a href="#图片资源管理">图片资源管理</a>
+    <li><a href="#imageview-图片控件">ImageView 图片控件</a>
       <ul>
-        <li><a href="#资源文件夹说明">资源文件夹说明</a></li>
-        <li><a href="#基本使用">基本使用</a></li>
+        <li><a href="#imageview-基本属性">ImageView 基本属性</a></li>
+        <li><a href="#图片资源管理">图片资源管理</a>
+          <ul>
+            <li><a href="#资源文件夹说明">资源文件夹说明</a></li>
+            <li><a href="#基本使用">基本使用</a></li>
+          </ul>
+        </li>
+        <li><a href="#图片显示模式-scaletype">图片显示模式 (scaleType)</a>
+          <ul>
+            <li><a href="#1-centercrop推荐">1. centerCrop（推荐）</a></li>
+            <li><a href="#2-centerinside">2. centerInside</a></li>
+            <li><a href="#3-fitcenter">3. fitCenter</a></li>
+            <li><a href="#4-fitxy">4. fitXY</a></li>
+            <li><a href="#5-matrix">5. matrix</a></li>
+          </ul>
+        </li>
+        <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
+          <ul>
+            <li><a href="#基本使用-1">基本使用</a></li>
+            <li><a href="#动态切换图片">动态切换图片</a></li>
+          </ul>
+        </li>
+        <li><a href="#imagebutton-图片按钮">ImageButton 图片按钮</a></li>
+        <li><a href="#图片加载优化">图片加载优化</a>
+          <ul>
+            <li><a href="#使用-glide-加载网络图片">使用 Glide 加载网络图片</a></li>
+            <li><a href="#图片缓存管理">图片缓存管理</a></li>
+          </ul>
+        </li>
+        <li><a href="#图片处理功能">图片处理功能</a>
+          <ul>
+            <li><a href="#图片旋转">图片旋转</a></li>
+            <li><a href="#图片缩放">图片缩放</a></li>
+          </ul>
+        </li>
+        <li><a href="#图片选择器">图片选择器</a>
+          <ul>
+            <li><a href="#从相册选择图片">从相册选择图片</a></li>
+          </ul>
+        </li>
+        <li><a href="#性能优化建议">性能优化建议</a>
+          <ul>
+            <li><a href="#1-图片压缩">1. 图片压缩</a></li>
+            <li><a href="#2-内存管理">2. 内存管理</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#图片显示模式-scaletype">图片显示模式 (scaleType)</a>
-      <ul>
-        <li><a href="#1-centercrop推荐">1. centerCrop（推荐）</a></li>
-        <li><a href="#2-centerinside">2. centerInside</a></li>
-        <li><a href="#3-fitcenter">3. fitCenter</a></li>
-        <li><a href="#4-fitxy">4. fitXY</a></li>
-        <li><a href="#5-matrix">5. matrix</a></li>
-      </ul>
-    </li>
-    <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
-      <ul>
-        <li><a href="#基本使用-1">基本使用</a></li>
-        <li><a href="#动态切换图片">动态切换图片</a></li>
-      </ul>
-    </li>
-    <li><a href="#imagebutton-图片按钮">ImageButton 图片按钮</a></li>
-    <li><a href="#图片加载优化">图片加载优化</a>
-      <ul>
-        <li><a href="#使用-glide-加载网络图片">使用 Glide 加载网络图片</a></li>
-        <li><a href="#图片缓存管理">图片缓存管理</a></li>
-      </ul>
-    </li>
-    <li><a href="#图片处理功能">图片处理功能</a>
-      <ul>
-        <li><a href="#图片旋转">图片旋转</a></li>
-        <li><a href="#图片缩放">图片缩放</a></li>
-      </ul>
-    </li>
-    <li><a href="#图片选择器">图片选择器</a>
-      <ul>
-        <li><a href="#从相册选择图片">从相册选择图片</a></li>
-      </ul>
-    </li>
-    <li><a href="#性能优化建议">性能优化建议</a>
-      <ul>
-        <li><a href="#1-图片压缩">1. 图片压缩</a></li>
-        <li><a href="#2-内存管理">2. 内存管理</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>
@@ -1061,53 +1065,57 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#imageview-基本属性">ImageView 基本属性</a></li>
-    <li><a href="#图片资源管理">图片资源管理</a>
+    <li><a href="#imageview-图片控件">ImageView 图片控件</a>
       <ul>
-        <li><a href="#资源文件夹说明">资源文件夹说明</a></li>
-        <li><a href="#基本使用">基本使用</a></li>
+        <li><a href="#imageview-基本属性">ImageView 基本属性</a></li>
+        <li><a href="#图片资源管理">图片资源管理</a>
+          <ul>
+            <li><a href="#资源文件夹说明">资源文件夹说明</a></li>
+            <li><a href="#基本使用">基本使用</a></li>
+          </ul>
+        </li>
+        <li><a href="#图片显示模式-scaletype">图片显示模式 (scaleType)</a>
+          <ul>
+            <li><a href="#1-centercrop推荐">1. centerCrop（推荐）</a></li>
+            <li><a href="#2-centerinside">2. centerInside</a></li>
+            <li><a href="#3-fitcenter">3. fitCenter</a></li>
+            <li><a href="#4-fitxy">4. fitXY</a></li>
+            <li><a href="#5-matrix">5. matrix</a></li>
+          </ul>
+        </li>
+        <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
+          <ul>
+            <li><a href="#基本使用-1">基本使用</a></li>
+            <li><a href="#动态切换图片">动态切换图片</a></li>
+          </ul>
+        </li>
+        <li><a href="#imagebutton-图片按钮">ImageButton 图片按钮</a></li>
+        <li><a href="#图片加载优化">图片加载优化</a>
+          <ul>
+            <li><a href="#使用-glide-加载网络图片">使用 Glide 加载网络图片</a></li>
+            <li><a href="#图片缓存管理">图片缓存管理</a></li>
+          </ul>
+        </li>
+        <li><a href="#图片处理功能">图片处理功能</a>
+          <ul>
+            <li><a href="#图片旋转">图片旋转</a></li>
+            <li><a href="#图片缩放">图片缩放</a></li>
+          </ul>
+        </li>
+        <li><a href="#图片选择器">图片选择器</a>
+          <ul>
+            <li><a href="#从相册选择图片">从相册选择图片</a></li>
+          </ul>
+        </li>
+        <li><a href="#性能优化建议">性能优化建议</a>
+          <ul>
+            <li><a href="#1-图片压缩">1. 图片压缩</a></li>
+            <li><a href="#2-内存管理">2. 内存管理</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#图片显示模式-scaletype">图片显示模式 (scaleType)</a>
-      <ul>
-        <li><a href="#1-centercrop推荐">1. centerCrop（推荐）</a></li>
-        <li><a href="#2-centerinside">2. centerInside</a></li>
-        <li><a href="#3-fitcenter">3. fitCenter</a></li>
-        <li><a href="#4-fitxy">4. fitXY</a></li>
-        <li><a href="#5-matrix">5. matrix</a></li>
-      </ul>
-    </li>
-    <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
-      <ul>
-        <li><a href="#基本使用-1">基本使用</a></li>
-        <li><a href="#动态切换图片">动态切换图片</a></li>
-      </ul>
-    </li>
-    <li><a href="#imagebutton-图片按钮">ImageButton 图片按钮</a></li>
-    <li><a href="#图片加载优化">图片加载优化</a>
-      <ul>
-        <li><a href="#使用-glide-加载网络图片">使用 Glide 加载网络图片</a></li>
-        <li><a href="#图片缓存管理">图片缓存管理</a></li>
-      </ul>
-    </li>
-    <li><a href="#图片处理功能">图片处理功能</a>
-      <ul>
-        <li><a href="#图片旋转">图片旋转</a></li>
-        <li><a href="#图片缩放">图片缩放</a></li>
-      </ul>
-    </li>
-    <li><a href="#图片选择器">图片选择器</a>
-      <ul>
-        <li><a href="#从相册选择图片">从相册选择图片</a></li>
-      </ul>
-    </li>
-    <li><a href="#性能优化建议">性能优化建议</a>
-      <ul>
-        <li><a href="#1-图片压缩">1. 图片压缩</a></li>
-        <li><a href="#2-内存管理">2. 内存管理</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>

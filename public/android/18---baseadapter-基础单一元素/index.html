@@ -1001,37 +1001,41 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#baseadapter-基本概念">BaseAdapter 基本概念</a>
+    <li><a href="#baseadapter-基础单一元素">BaseAdapter 基础单一元素</a>
       <ul>
-        <li><a href="#核心方法">核心方法</a></li>
+        <li><a href="#baseadapter-基本概念">BaseAdapter 基本概念</a>
+          <ul>
+            <li><a href="#核心方法">核心方法</a></li>
+          </ul>
+        </li>
+        <li><a href="#基本使用示例">基本使用示例</a>
+          <ul>
+            <li><a href="#1-简单baseadapter实现">1. 简单BaseAdapter实现</a></li>
+            <li><a href="#2-自定义布局文件">2. 自定义布局文件</a></li>
+            <li><a href="#3-复杂数据模型baseadapter">3. 复杂数据模型BaseAdapter</a></li>
+            <li><a href="#4-复杂布局文件">4. 复杂布局文件</a></li>
+          </ul>
+        </li>
+        <li><a href="#高级用法示例">高级用法示例</a>
+          <ul>
+            <li><a href="#1-多类型列表项">1. 多类型列表项</a></li>
+            <li><a href="#2-动态数据更新">2. 动态数据更新</a></li>
+          </ul>
+        </li>
+        <li><a href="#实际应用场景">实际应用场景</a>
+          <ul>
+            <li><a href="#1-聊天消息列表">1. 聊天消息列表</a></li>
+          </ul>
+        </li>
+        <li><a href="#baseadapter-最佳实践">BaseAdapter 最佳实践</a>
+          <ul>
+            <li><a href="#1-viewholder模式">1. ViewHolder模式</a></li>
+            <li><a href="#2-适配器工具类">2. 适配器工具类</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#基本使用示例">基本使用示例</a>
-      <ul>
-        <li><a href="#1-简单baseadapter实现">1. 简单BaseAdapter实现</a></li>
-        <li><a href="#2-自定义布局文件">2. 自定义布局文件</a></li>
-        <li><a href="#3-复杂数据模型baseadapter">3. 复杂数据模型BaseAdapter</a></li>
-        <li><a href="#4-复杂布局文件">4. 复杂布局文件</a></li>
-      </ul>
-    </li>
-    <li><a href="#高级用法示例">高级用法示例</a>
-      <ul>
-        <li><a href="#1-多类型列表项">1. 多类型列表项</a></li>
-        <li><a href="#2-动态数据更新">2. 动态数据更新</a></li>
-      </ul>
-    </li>
-    <li><a href="#实际应用场景">实际应用场景</a>
-      <ul>
-        <li><a href="#1-聊天消息列表">1. 聊天消息列表</a></li>
-      </ul>
-    </li>
-    <li><a href="#baseadapter-最佳实践">BaseAdapter 最佳实践</a>
-      <ul>
-        <li><a href="#1-viewholder模式">1. ViewHolder模式</a></li>
-        <li><a href="#2-适配器工具类">2. 适配器工具类</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>
@@ -1045,37 +1049,41 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#baseadapter-基本概念">BaseAdapter 基本概念</a>
+    <li><a href="#baseadapter-基础单一元素">BaseAdapter 基础单一元素</a>
       <ul>
-        <li><a href="#核心方法">核心方法</a></li>
+        <li><a href="#baseadapter-基本概念">BaseAdapter 基本概念</a>
+          <ul>
+            <li><a href="#核心方法">核心方法</a></li>
+          </ul>
+        </li>
+        <li><a href="#基本使用示例">基本使用示例</a>
+          <ul>
+            <li><a href="#1-简单baseadapter实现">1. 简单BaseAdapter实现</a></li>
+            <li><a href="#2-自定义布局文件">2. 自定义布局文件</a></li>
+            <li><a href="#3-复杂数据模型baseadapter">3. 复杂数据模型BaseAdapter</a></li>
+            <li><a href="#4-复杂布局文件">4. 复杂布局文件</a></li>
+          </ul>
+        </li>
+        <li><a href="#高级用法示例">高级用法示例</a>
+          <ul>
+            <li><a href="#1-多类型列表项">1. 多类型列表项</a></li>
+            <li><a href="#2-动态数据更新">2. 动态数据更新</a></li>
+          </ul>
+        </li>
+        <li><a href="#实际应用场景">实际应用场景</a>
+          <ul>
+            <li><a href="#1-聊天消息列表">1. 聊天消息列表</a></li>
+          </ul>
+        </li>
+        <li><a href="#baseadapter-最佳实践">BaseAdapter 最佳实践</a>
+          <ul>
+            <li><a href="#1-viewholder模式">1. ViewHolder模式</a></li>
+            <li><a href="#2-适配器工具类">2. 适配器工具类</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#基本使用示例">基本使用示例</a>
-      <ul>
-        <li><a href="#1-简单baseadapter实现">1. 简单BaseAdapter实现</a></li>
-        <li><a href="#2-自定义布局文件">2. 自定义布局文件</a></li>
-        <li><a href="#3-复杂数据模型baseadapter">3. 复杂数据模型BaseAdapter</a></li>
-        <li><a href="#4-复杂布局文件">4. 复杂布局文件</a></li>
-      </ul>
-    </li>
-    <li><a href="#高级用法示例">高级用法示例</a>
-      <ul>
-        <li><a href="#1-多类型列表项">1. 多类型列表项</a></li>
-        <li><a href="#2-动态数据更新">2. 动态数据更新</a></li>
-      </ul>
-    </li>
-    <li><a href="#实际应用场景">实际应用场景</a>
-      <ul>
-        <li><a href="#1-聊天消息列表">1. 聊天消息列表</a></li>
-      </ul>
-    </li>
-    <li><a href="#baseadapter-最佳实践">BaseAdapter 最佳实践</a>
-      <ul>
-        <li><a href="#1-viewholder模式">1. ViewHolder模式</a></li>
-        <li><a href="#2-适配器工具类">2. 适配器工具类</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>

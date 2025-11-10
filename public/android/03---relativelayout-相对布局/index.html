@@ -1001,46 +1001,50 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#relativelayout-基本属性">RelativeLayout 基本属性</a></li>
-    <li><a href="#相对父容器属性">相对父容器属性</a>
+    <li><a href="#relativelayout-相对布局">RelativeLayout 相对布局</a>
       <ul>
-        <li><a href="#基本对齐属性">基本对齐属性</a></li>
-        <li><a href="#水平垂直居中">水平垂直居中</a></li>
+        <li><a href="#relativelayout-基本属性">RelativeLayout 基本属性</a></li>
+        <li><a href="#相对父容器属性">相对父容器属性</a>
+          <ul>
+            <li><a href="#基本对齐属性">基本对齐属性</a></li>
+            <li><a href="#水平垂直居中">水平垂直居中</a></li>
+          </ul>
+        </li>
+        <li><a href="#相对同级别控件属性">相对同级别控件属性</a>
+          <ul>
+            <li><a href="#位置关系属性">位置关系属性</a></li>
+            <li><a href="#对齐关系属性">对齐关系属性</a></li>
+          </ul>
+        </li>
+        <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
+          <ul>
+            <li><a href="#动态创建-relativelayout">动态创建 RelativeLayout</a></li>
+            <li><a href="#复杂布局示例">复杂布局示例</a></li>
+          </ul>
+        </li>
+        <li><a href="#实际应用场景">实际应用场景</a>
+          <ul>
+            <li><a href="#1-用户信息卡片">1. 用户信息卡片</a></li>
+            <li><a href="#2-聊天消息布局">2. 聊天消息布局</a></li>
+            <li><a href="#3-浮动操作按钮">3. 浮动操作按钮</a></li>
+          </ul>
+        </li>
+        <li><a href="#性能优化建议">性能优化建议</a>
+          <ul>
+            <li><a href="#1-避免过度嵌套">1. 避免过度嵌套</a></li>
+            <li><a href="#2-合理使用规则">2. 合理使用规则</a></li>
+            <li><a href="#3-使用-viewstub-延迟加载">3. 使用 ViewStub 延迟加载</a></li>
+          </ul>
+        </li>
+        <li><a href="#常见问题解决">常见问题解决</a>
+          <ul>
+            <li><a href="#1-控件重叠">1. 控件重叠</a></li>
+            <li><a href="#2-规则冲突">2. 规则冲突</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#相对同级别控件属性">相对同级别控件属性</a>
-      <ul>
-        <li><a href="#位置关系属性">位置关系属性</a></li>
-        <li><a href="#对齐关系属性">对齐关系属性</a></li>
-      </ul>
-    </li>
-    <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
-      <ul>
-        <li><a href="#动态创建-relativelayout">动态创建 RelativeLayout</a></li>
-        <li><a href="#复杂布局示例">复杂布局示例</a></li>
-      </ul>
-    </li>
-    <li><a href="#实际应用场景">实际应用场景</a>
-      <ul>
-        <li><a href="#1-用户信息卡片">1. 用户信息卡片</a></li>
-        <li><a href="#2-聊天消息布局">2. 聊天消息布局</a></li>
-        <li><a href="#3-浮动操作按钮">3. 浮动操作按钮</a></li>
-      </ul>
-    </li>
-    <li><a href="#性能优化建议">性能优化建议</a>
-      <ul>
-        <li><a href="#1-避免过度嵌套">1. 避免过度嵌套</a></li>
-        <li><a href="#2-合理使用规则">2. 合理使用规则</a></li>
-        <li><a href="#3-使用-viewstub-延迟加载">3. 使用 ViewStub 延迟加载</a></li>
-      </ul>
-    </li>
-    <li><a href="#常见问题解决">常见问题解决</a>
-      <ul>
-        <li><a href="#1-控件重叠">1. 控件重叠</a></li>
-        <li><a href="#2-规则冲突">2. 规则冲突</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>
@@ -1054,46 +1058,50 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#relativelayout-基本属性">RelativeLayout 基本属性</a></li>
-    <li><a href="#相对父容器属性">相对父容器属性</a>
+    <li><a href="#relativelayout-相对布局">RelativeLayout 相对布局</a>
       <ul>
-        <li><a href="#基本对齐属性">基本对齐属性</a></li>
-        <li><a href="#水平垂直居中">水平垂直居中</a></li>
+        <li><a href="#relativelayout-基本属性">RelativeLayout 基本属性</a></li>
+        <li><a href="#相对父容器属性">相对父容器属性</a>
+          <ul>
+            <li><a href="#基本对齐属性">基本对齐属性</a></li>
+            <li><a href="#水平垂直居中">水平垂直居中</a></li>
+          </ul>
+        </li>
+        <li><a href="#相对同级别控件属性">相对同级别控件属性</a>
+          <ul>
+            <li><a href="#位置关系属性">位置关系属性</a></li>
+            <li><a href="#对齐关系属性">对齐关系属性</a></li>
+          </ul>
+        </li>
+        <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
+          <ul>
+            <li><a href="#动态创建-relativelayout">动态创建 RelativeLayout</a></li>
+            <li><a href="#复杂布局示例">复杂布局示例</a></li>
+          </ul>
+        </li>
+        <li><a href="#实际应用场景">实际应用场景</a>
+          <ul>
+            <li><a href="#1-用户信息卡片">1. 用户信息卡片</a></li>
+            <li><a href="#2-聊天消息布局">2. 聊天消息布局</a></li>
+            <li><a href="#3-浮动操作按钮">3. 浮动操作按钮</a></li>
+          </ul>
+        </li>
+        <li><a href="#性能优化建议">性能优化建议</a>
+          <ul>
+            <li><a href="#1-避免过度嵌套">1. 避免过度嵌套</a></li>
+            <li><a href="#2-合理使用规则">2. 合理使用规则</a></li>
+            <li><a href="#3-使用-viewstub-延迟加载">3. 使用 ViewStub 延迟加载</a></li>
+          </ul>
+        </li>
+        <li><a href="#常见问题解决">常见问题解决</a>
+          <ul>
+            <li><a href="#1-控件重叠">1. 控件重叠</a></li>
+            <li><a href="#2-规则冲突">2. 规则冲突</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#相对同级别控件属性">相对同级别控件属性</a>
-      <ul>
-        <li><a href="#位置关系属性">位置关系属性</a></li>
-        <li><a href="#对齐关系属性">对齐关系属性</a></li>
-      </ul>
-    </li>
-    <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
-      <ul>
-        <li><a href="#动态创建-relativelayout">动态创建 RelativeLayout</a></li>
-        <li><a href="#复杂布局示例">复杂布局示例</a></li>
-      </ul>
-    </li>
-    <li><a href="#实际应用场景">实际应用场景</a>
-      <ul>
-        <li><a href="#1-用户信息卡片">1. 用户信息卡片</a></li>
-        <li><a href="#2-聊天消息布局">2. 聊天消息布局</a></li>
-        <li><a href="#3-浮动操作按钮">3. 浮动操作按钮</a></li>
-      </ul>
-    </li>
-    <li><a href="#性能优化建议">性能优化建议</a>
-      <ul>
-        <li><a href="#1-避免过度嵌套">1. 避免过度嵌套</a></li>
-        <li><a href="#2-合理使用规则">2. 合理使用规则</a></li>
-        <li><a href="#3-使用-viewstub-延迟加载">3. 使用 ViewStub 延迟加载</a></li>
-      </ul>
-    </li>
-    <li><a href="#常见问题解决">常见问题解决</a>
-      <ul>
-        <li><a href="#1-控件重叠">1. 控件重叠</a></li>
-        <li><a href="#2-规则冲突">2. 规则冲突</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>

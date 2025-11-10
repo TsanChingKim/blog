@@ -1001,42 +1001,46 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#progressbar-基本属性">ProgressBar 基本属性</a></li>
-    <li><a href="#progressbar-样式类型">ProgressBar 样式类型</a>
+    <li><a href="#progressbar-进度条控件">ProgressBar 进度条控件</a>
       <ul>
-        <li><a href="#1-默认圆形进度条">1. 默认圆形进度条</a></li>
-        <li><a href="#2-水平进度条">2. 水平进度条</a></li>
-        <li><a href="#3-小尺寸进度条">3. 小尺寸进度条</a></li>
-        <li><a href="#4-大尺寸进度条">4. 大尺寸进度条</a></li>
+        <li><a href="#progressbar-基本属性">ProgressBar 基本属性</a></li>
+        <li><a href="#progressbar-样式类型">ProgressBar 样式类型</a>
+          <ul>
+            <li><a href="#1-默认圆形进度条">1. 默认圆形进度条</a></li>
+            <li><a href="#2-水平进度条">2. 水平进度条</a></li>
+            <li><a href="#3-小尺寸进度条">3. 小尺寸进度条</a></li>
+            <li><a href="#4-大尺寸进度条">4. 大尺寸进度条</a></li>
+          </ul>
+        </li>
+        <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
+          <ul>
+            <li><a href="#基本使用">基本使用</a></li>
+            <li><a href="#自定义进度条">自定义进度条</a></li>
+            <li><a href="#文件下载进度示例">文件下载进度示例</a></li>
+          </ul>
+        </li>
+        <li><a href="#实际应用场景">实际应用场景</a>
+          <ul>
+            <li><a href="#1-应用启动页面">1. 应用启动页面</a></li>
+            <li><a href="#2-文件上传进度">2. 文件上传进度</a></li>
+            <li><a href="#3-数据同步进度">3. 数据同步进度</a></li>
+          </ul>
+        </li>
+        <li><a href="#自定义样式">自定义样式</a>
+          <ul>
+            <li><a href="#自定义进度条样式">自定义进度条样式</a></li>
+            <li><a href="#自定义圆形进度条">自定义圆形进度条</a></li>
+          </ul>
+        </li>
+        <li><a href="#性能优化建议">性能优化建议</a>
+          <ul>
+            <li><a href="#1-避免频繁更新">1. 避免频繁更新</a></li>
+            <li><a href="#2-使用动画平滑过渡">2. 使用动画平滑过渡</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
-      <ul>
-        <li><a href="#基本使用">基本使用</a></li>
-        <li><a href="#自定义进度条">自定义进度条</a></li>
-        <li><a href="#文件下载进度示例">文件下载进度示例</a></li>
-      </ul>
-    </li>
-    <li><a href="#实际应用场景">实际应用场景</a>
-      <ul>
-        <li><a href="#1-应用启动页面">1. 应用启动页面</a></li>
-        <li><a href="#2-文件上传进度">2. 文件上传进度</a></li>
-        <li><a href="#3-数据同步进度">3. 数据同步进度</a></li>
-      </ul>
-    </li>
-    <li><a href="#自定义样式">自定义样式</a>
-      <ul>
-        <li><a href="#自定义进度条样式">自定义进度条样式</a></li>
-        <li><a href="#自定义圆形进度条">自定义圆形进度条</a></li>
-      </ul>
-    </li>
-    <li><a href="#性能优化建议">性能优化建议</a>
-      <ul>
-        <li><a href="#1-避免频繁更新">1. 避免频繁更新</a></li>
-        <li><a href="#2-使用动画平滑过渡">2. 使用动画平滑过渡</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>
@@ -1050,42 +1054,46 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#progressbar-基本属性">ProgressBar 基本属性</a></li>
-    <li><a href="#progressbar-样式类型">ProgressBar 样式类型</a>
+    <li><a href="#progressbar-进度条控件">ProgressBar 进度条控件</a>
       <ul>
-        <li><a href="#1-默认圆形进度条">1. 默认圆形进度条</a></li>
-        <li><a href="#2-水平进度条">2. 水平进度条</a></li>
-        <li><a href="#3-小尺寸进度条">3. 小尺寸进度条</a></li>
-        <li><a href="#4-大尺寸进度条">4. 大尺寸进度条</a></li>
+        <li><a href="#progressbar-基本属性">ProgressBar 基本属性</a></li>
+        <li><a href="#progressbar-样式类型">ProgressBar 样式类型</a>
+          <ul>
+            <li><a href="#1-默认圆形进度条">1. 默认圆形进度条</a></li>
+            <li><a href="#2-水平进度条">2. 水平进度条</a></li>
+            <li><a href="#3-小尺寸进度条">3. 小尺寸进度条</a></li>
+            <li><a href="#4-大尺寸进度条">4. 大尺寸进度条</a></li>
+          </ul>
+        </li>
+        <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
+          <ul>
+            <li><a href="#基本使用">基本使用</a></li>
+            <li><a href="#自定义进度条">自定义进度条</a></li>
+            <li><a href="#文件下载进度示例">文件下载进度示例</a></li>
+          </ul>
+        </li>
+        <li><a href="#实际应用场景">实际应用场景</a>
+          <ul>
+            <li><a href="#1-应用启动页面">1. 应用启动页面</a></li>
+            <li><a href="#2-文件上传进度">2. 文件上传进度</a></li>
+            <li><a href="#3-数据同步进度">3. 数据同步进度</a></li>
+          </ul>
+        </li>
+        <li><a href="#自定义样式">自定义样式</a>
+          <ul>
+            <li><a href="#自定义进度条样式">自定义进度条样式</a></li>
+            <li><a href="#自定义圆形进度条">自定义圆形进度条</a></li>
+          </ul>
+        </li>
+        <li><a href="#性能优化建议">性能优化建议</a>
+          <ul>
+            <li><a href="#1-避免频繁更新">1. 避免频繁更新</a></li>
+            <li><a href="#2-使用动画平滑过渡">2. 使用动画平滑过渡</a></li>
+          </ul>
+        </li>
+        <li><a href="#-总结">📋 总结</a></li>
       </ul>
     </li>
-    <li><a href="#kotlin-代码示例">Kotlin 代码示例</a>
-      <ul>
-        <li><a href="#基本使用">基本使用</a></li>
-        <li><a href="#自定义进度条">自定义进度条</a></li>
-        <li><a href="#文件下载进度示例">文件下载进度示例</a></li>
-      </ul>
-    </li>
-    <li><a href="#实际应用场景">实际应用场景</a>
-      <ul>
-        <li><a href="#1-应用启动页面">1. 应用启动页面</a></li>
-        <li><a href="#2-文件上传进度">2. 文件上传进度</a></li>
-        <li><a href="#3-数据同步进度">3. 数据同步进度</a></li>
-      </ul>
-    </li>
-    <li><a href="#自定义样式">自定义样式</a>
-      <ul>
-        <li><a href="#自定义进度条样式">自定义进度条样式</a></li>
-        <li><a href="#自定义圆形进度条">自定义圆形进度条</a></li>
-      </ul>
-    </li>
-    <li><a href="#性能优化建议">性能优化建议</a>
-      <ul>
-        <li><a href="#1-避免频繁更新">1. 避免频繁更新</a></li>
-        <li><a href="#2-使用动画平滑过渡">2. 使用动画平滑过渡</a></li>
-      </ul>
-    </li>
-    <li><a href="#-总结">📋 总结</a></li>
   </ul>
 </nav>
   </div>
