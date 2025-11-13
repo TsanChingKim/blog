@@ -11,6 +11,35 @@ import sys
 import glob
 from pathlib import Path
 
+CALLOUT_TYPE_MAP = {
+    "note": "note",
+    "info": "info",
+    "todo": "note",
+    "tip": "tip",
+    "hint": "tip",
+    "important": "info",
+    "abstract": "note",
+    "summary": "note",
+    "tldr": "note",
+    "success": "success",
+    "check": "success",
+    "done": "success",
+    "question": "info",
+    "help": "info",
+    "faq": "info",
+    "warning": "warning",
+    "caution": "warning",
+    "attention": "warning",
+    "failure": "danger",
+    "fail": "danger",
+    "missing": "danger",
+    "danger": "danger",
+    "error": "danger",
+    "bug": "danger",
+    "example": "note",
+    "quote": "",
+}
+
 def convert_mermaid_syntax(content):
     """
     将Obsidian的Mermaid语法转换为Blowfish的Mermaid简码语法
@@ -29,6 +58,75 @@ def convert_mermaid_syntax(content):
     new_content = re.sub(mermaid_pattern, replace_mermaid, content, flags=re.DOTALL)
     
     return new_content
+
+
+def convert_callouts(content):
+    """
+    将Obsidian的Callout语法转换为Blowfish的alert短代码
+    """
+    lines = content.splitlines()
+    converted_lines = []
+    total_lines = len(lines)
+    i = 0
+
+    def strip_callout_prefix(text):
+        return re.sub(r'^\s{0,3}>\s?', '', text)
+
+    while i < total_lines:
+        line = lines[i]
+        match = re.match(
+            r'^\s{0,3}>\s*\[!(?P<type>[^\]\s]+)\]\s*(?P<modifier>[+-])?\s*(?P<title>.*)$',
+            line,
+            flags=re.IGNORECASE,
+        )
+
+        if match:
+            callout_type = match.group("type").strip()
+            title = match.group("title").strip()
+            style_key = CALLOUT_TYPE_MAP.get(callout_type.lower(), callout_type.lower())
+
+            callout_body = []
+            if title:
+                callout_body.append(title)
+
+            i += 1
+            while i < total_lines:
+                next_line = lines[i]
+                if re.match(r'^\s{0,3}>\s?', next_line):
+                    callout_body.append(strip_callout_prefix(next_line))
+                    i += 1
+                else:
+                    break
+
+            while callout_body and callout_body[-1].strip() == "":
+                callout_body.pop()
+
+            params = []
+            if style_key:
+                params.append(f'"{style_key}"')
+
+            effective_title = title if title else callout_type.capitalize()
+            if effective_title:
+                params.append(f'title="{effective_title}"')
+
+            opening = "{{< alert"
+            if params:
+                opening += " " + " ".join(params)
+            opening += " >}}"
+
+            converted_lines.append(opening)
+            converted_lines.extend(callout_body)
+            converted_lines.append("{{< /alert >}}")
+            converted_lines.append("")
+        else:
+            converted_lines.append(line)
+            i += 1
+
+    result = "\n".join(converted_lines)
+    if content.endswith("\n") and not result.endswith("\n"):
+        result += "\n"
+    return result
+
 
 def convert_latex_to_katex(content):
     """
@@ -174,26 +272,44 @@ def process_file(file_path):
     """
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
+            original_content = f.read()
+
+        content = original_content
+        modified = False
+
         # 先转换Mermaid语法
-        content = convert_mermaid_syntax(content)
-        
+        new_content = convert_mermaid_syntax(content)
+        if new_content != content:
+            modified = True
+            content = new_content
+
+        # 转换Callout为 alert 简码
+        new_content = convert_callouts(content)
+        if new_content != content:
+            modified = True
+            content = new_content
+
         # 转换LaTeX到KaTeX
-        content = convert_latex_to_katex(content)
+        new_content = convert_latex_to_katex(content)
+        if new_content != content:
+            modified = True
+            content = new_content
         
         # 再转换YAML列表格式
-        converted_content = convert_yaml_lists_to_json(content)
-        
-        if converted_content != content:
+        new_content = convert_yaml_lists_to_json(content)
+        if new_content != content:
+            modified = True
+            content = new_content
+
+        if modified:
             with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(converted_content)
+                f.write(content)
             print(f"已转换: {file_path}")
             return True
         else:
             print(f"无需转换: {file_path}")
             return False
-            
+
     except Exception as e:
         print(f"处理文件 {file_path} 时出错: {e}")
         return False
@@ -239,9 +355,12 @@ def preview_changes(file_path):
         
         # 先转换Mermaid语法
         mermaid_converted = convert_mermaid_syntax(original_content)
+
+        # 转换Callout为 alert
+        callout_converted = convert_callouts(mermaid_converted)
         
         # 转换LaTeX到KaTeX
-        latex_converted = convert_latex_to_katex(mermaid_converted)
+        latex_converted = convert_latex_to_katex(callout_converted)
         
         # 再转换YAML列表格式
         converted_content = convert_yaml_lists_to_json(latex_converted)
@@ -261,8 +380,20 @@ def preview_changes(file_path):
                     print(f"    新: {{< mermaid >}}\n{match[:100]}...{{< /mermaid >}}")
                 print()
             
+            # 检查Callout转换
+            if callout_converted != mermaid_converted:
+                print("Callout 转换:")
+                callout_matches = re.findall(
+                    r'^\s{0,3}>\s*\[!(?P<type>[^\]\s]+)\].*$',
+                    original_content,
+                    flags=re.MULTILINE,
+                )
+                for idx, c_type in enumerate(callout_matches, start=1):
+                    print(f"  发现Callout {idx}: {c_type}")
+                print()
+            
             # 检查LaTeX转换
-            if latex_converted != mermaid_converted:
+            if latex_converted != callout_converted:
                 print("LaTeX到KaTeX转换:")
                 # 查找行内公式
                 inline_matches = re.findall(r'(?<!\$)\$(?!\$)[^$\n]+\$(?!\$)', original_content)
@@ -288,7 +419,7 @@ def preview_changes(file_path):
             if converted_content != latex_converted:
                 print("YAML列表转换:")
                 # 显示变化的部分
-                original_lines = mermaid_converted.split('\n')
+                original_lines = callout_converted.split('\n')
                 converted_lines = converted_content.split('\n')
                 
                 for i, (orig, conv) in enumerate(zip(original_lines, converted_lines)):
@@ -324,6 +455,7 @@ def main():
         print("")
         print("转换内容:")
         print("  Mermaid语法: ```mermaid ... ``` -> {{< mermaid >}} ... {{< /mermaid >}}")
+        print("  Callout: > [!TYPE] ... -> {{< alert \"type\" title=\"...\" >}} ... {{< /alert >}}")
         print("  LaTeX公式: $...$ -> \\(...\\) (行内), $$...$$ -> $$...$$ (块级)")
         print("  自动添加 {{< katex >}} 短代码（如果文章包含数学公式）")
         print("  Categories: -> categories: [JSON数组]")
