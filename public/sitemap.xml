@@ -3,25 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/blog/computer-science/data-structure/chapter-1-%E5%BC%95%E8%AE%BA/</loc>
-    <lastmod>2025-11-04T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/blog/computer-science/data-structure/chapter-2-%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2025-11-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/blog/computer-science/</loc>
-    <lastmod>2025-11-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/blog/computer-science/data-structure/</loc>
-    <lastmod>2025-11-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-11-10T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blog/computer-science/data-structure/chapter-1-%E5%BC%95%E8%AE%BA/</loc>
     <lastmod>2025-11-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
